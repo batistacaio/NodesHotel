@@ -1,0 +1,102 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+header {
+    background-color: rgba(20, 39, 74, 0.5);
+}
+.banner {
+    background-image: url("../public/images/hotel-macutay.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Playfair", serif;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 580px;
+}
+.logo {
+    background-color: #E0B973;
+    border-radius: 0px 0px 50px 50px;
+    height: 150px;
+    width: 300px;
+    justify-self: center;
+    margin-left: 170px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.1px;
+}
+.logo h1 {
+    font-size: 75px;
+    color:#14274A;
+    font-weight: 500;
+    letter-spacing: -7px;
+}
+.logo h2 {
+    letter-spacing: 5px;
+    color:#14274A;
+    font-weight: 400;
+}
+nav {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    height: 90px;
+    width: 40%;
+    color: #FFF;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    list-style-type: none;
+    font-size: 20px;            
+}
+nav ul a {
+    text-decoration: none;
+    color: #FFF;
+}
+nav ul a:hover {
+    text-decoration: underline white;
+
+}
+.text-cta {
+    position: absolute;
+    left: 50px;
+    justify-content: center;
+    align-self: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #FFF;
+}
+.text-cta span  {
+    display: block;
+}
+.first-paragraf {
+    font-family: "Playfair", serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.second-paragraf {
+    font-family: "Playfair", serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+
+
+}
+.btn_cta {
+    width: 100px;
+    height: 70px;
+    position: relative;
+    top: 80%;
+    right: 45%;
+}
