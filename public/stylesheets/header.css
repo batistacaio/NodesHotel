@@ -11,7 +11,7 @@ header {
     background-color: rgba(20, 39, 74, 0.5);
 }
 .banner {
-    background-image: url("../public/images/hotel-macutay.jpg");
+    background-image: url("../images/hotel-macutay.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
