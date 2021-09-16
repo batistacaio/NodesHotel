@@ -1,6 +1,9 @@
 
 body{
   margin-left:auto;
+  width: 100vw;
+  overflow-x: hidden;
+  background: linear-gradient(#808080, #363636);
 }
 
 
@@ -11,7 +14,9 @@ body{
   margin-bottom: 40px;
   font-size: 40px;
   transition-duration: 1s;
-  width: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  
  
   
 }
@@ -24,7 +29,7 @@ body{
 .greetings {transition: all 1s ease-in-out}
 
 .block{
-  background-color: #FFD700;
+  background-color: #5F9EA0;
   width: 100%;
   margin-top: 1px;
 }
@@ -38,11 +43,52 @@ margin: 0 auto;
 text-align: justify;
 justify-content: center;
 margin-bottom: 30px;
-background-color: #FFD700;
+
 
 }
 
 .rooms{
 box-sizing: border-box;
+margin-left: 5px;
+margin-right: 5px;
 
+
+}
+.box{
+  position: absolute;
+  background-color: #008080;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 230px;
+  width: 100vw;
+}
+.newsletter {
+  position: relative;
+  top: -15em;
+  left: 90em;
+}
+.socialMedia{
+  position: relative;
+  top: -15em;
+  left: 98em;
+}
+
+ul img{
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+ul li{
+  list-style-type: none;
+}
+.logo img{
+  width: 350px;
+  margin-left: -30px;
+ 
+}
+.navFooter{
+  position: relative;
+  top: -10em;
+  left: 50em
 }
