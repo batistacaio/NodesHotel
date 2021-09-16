@@ -11,10 +11,13 @@ header {
     background-color: rgba(20, 39, 74, 0.5);
 }
 .banner {
-    background-image: url("../images/hotel-macutay.png");
+    background: 
+        linear-gradient(
+            rgba(20, 39, 74, 0.5),
+            rgba(20, 39, 74, 0.5)),
+        url("../images/hotel-macutay.png") no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     font-family: "Playfair", serif;
     justify-content: space-between;
     width: 100%;
@@ -69,29 +72,25 @@ nav ul a:hover {
 }
 .text-cta {
     position: absolute;
-    left: 50px;
     justify-content: center;
     align-self: center;
+    left: 80px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #FFF;
 }
-.text-cta span  {
+.text-two  {
     display: block;
-}
-.first-paragraf {
+    font-size: 70px;
     font-family: "Playfair", serif;
-    font-weight: 700;
-    font-size: 60px;
     text-transform: uppercase;
+    letter-spacing: -7px;
 }
-.second-paragraf {
+.text-three {
+    font-size: 50px;
     font-family: "Playfair", serif;
-    font-weight: 500;
-    font-size: 40px;
     text-transform: uppercase;
-
-
+    letter-spacing: -7px;
 }
 .btn_cta {
     width: 100px;
