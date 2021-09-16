@@ -1,8 +1,48 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+body{
+  margin-left:auto;
 }
 
-a {
-  color: #00B7FF;
+
+.greetings{
+  display: flex;
+  justify-content: center;
+  margin-top:34px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  transition-duration: 1s;
+  width: auto;
+ 
+  
+}
+.greetings:hover{
+  transform: scale(1.5);
+  background-color: rgba(36, 37, 110,0.5);
+  cursor: pointer;
+  color: #FFD700;
+}
+.greetings {transition: all 1s ease-in-out}
+
+.block{
+  background-color: #FFD700;
+  width: 100%;
+  margin-top: 1px;
+}
+
+.presentation {
+display: flex;
+align-items: center;
+font-size: 22px;
+width: 800px;
+margin: 0 auto;
+text-align: justify;
+justify-content: center;
+margin-bottom: 30px;
+background-color: #FFD700;
+
+}
+
+.rooms{
+box-sizing: border-box;
+
 }
