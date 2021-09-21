@@ -3,10 +3,6 @@ html,body {
     padding: 0;
     box-sizing: border-box;
 }
-
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap'); */
-
 header {
     background-color: rgba(20, 39, 74, 0.5);
 }
@@ -71,31 +67,55 @@ nav ul a:hover {
 
 }
 .text-cta {
+    display: flex;
     position: absolute;
+    flex-direction: column;
     justify-content: center;
     align-self: center;
     left: 80px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
     color: #FFF;
 }
-.text-two  {
+.text-cta p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight:200;
+    line-height: 0.01;
+    text-transform: uppercase;
+    padding: 1px;
+    margin-bottom: 15px;
+}
+
+.text-principal  {
     display: block;
     font-size: 70px;
     font-family: "Playfair", serif;
     text-transform: uppercase;
     letter-spacing: -7px;
+    line-height: 0.8;
 }
-.text-three {
-    font-size: 50px;
-    font-family: "Playfair", serif;
+.text-secundario {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight:200;
+    line-height: 0.01;
     text-transform: uppercase;
-    letter-spacing: -7px;
+    margin-top: 15px;
 }
+
 .btn_cta {
-    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
     height: 70px;
     position: relative;
     top: 80%;
-    right: 45%;
+    right: 45%; 
+    background-color: #E0B973;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #FFF;
 }
+
