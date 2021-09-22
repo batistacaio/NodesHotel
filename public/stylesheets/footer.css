@@ -1,3 +1,26 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
+.navFooter{
+  position: relative;
+  top: -10em;
+  left: 50em
+}
+
+.socialMedia{
+    position: relative;
+    top: -15em;
+    left: 98em;
+  }
+
+  .newsletter {
+    position: relative;
+    top: -15em;
+    left: 90em;
+  }
+
+  ul img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+  }
