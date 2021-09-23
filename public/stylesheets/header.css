@@ -63,7 +63,7 @@ nav ul a {
     color: #FFF;
 }
 nav ul a:hover {
-    text-decoration: underline white;
+    color: black;
 
 }
 .text-cta {

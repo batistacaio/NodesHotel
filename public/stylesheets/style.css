@@ -10,24 +10,8 @@ body{
   margin-top:34px;
   margin-bottom: 40px;
   font-size: 40px;
-  transition-duration: 1s;
   margin-left: 50px;
   margin-right: 50px; 
-}
-
-.greetings:hover{
-  transform: scale(1.5);
-  background-color: rgba(36, 37, 110,0.5);
-  cursor: pointer;
-  color: #FFD700;
-}
-
-.greetings {transition: all 1s ease-in-out}
-
-.block{
-  background-color: #5F9EA0;
-  width: 100%;
-  margin-top: 1px;
 }
 
 .presentation {
@@ -55,13 +39,4 @@ margin-right: 5px;
   margin-right: 5px;
   height: 230px;
   width: 100vw;
-}
-
-ul li{
-  list-style-type: none;
-}
-
-.logo img{
-  width: 350px;
-  margin-left: -30px;
 }
