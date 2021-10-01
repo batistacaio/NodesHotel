@@ -34,7 +34,7 @@
                     </a>
                 </ul>
             </nav>
-            <div class="contatoLogo">
+            <div class="contactLogo">
                 <h2>Contate-nos</h2>
             </div>
         </div>
@@ -51,7 +51,15 @@
             Email: email@nodeshotel.com.br</p>
         </div>
         <div class="contactForm">
-
+            <form action="#" method="POST">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="message">Mensagem</label>
+                <textarea name="email" id="email"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </main>
     <%- include("partials/footer.ejs") %>
