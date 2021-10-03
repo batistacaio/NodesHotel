@@ -5,6 +5,15 @@
 body{
     font-family: 'Gemunu Libre', sans-serif;
 }
+.header{
+    display: flex;
+    background-color: teal;
+    height: 100px;
+    justify-content: center;
+   font-size: 50px;
+   text-align: center;
+   align-items: center;
+}
 
 .detalhes{
    
@@ -12,6 +21,7 @@ body{
     justify-content: center;
     position: relative;
     justify-content: space-between;
+    margin-top: 15px;
 }
 .parag{
    
@@ -19,7 +29,7 @@ body{
     margin-left: 20px;
     border: 1px solid #1e90ff;
     border-radius: 28px;
-    margin-top: 80px;
+ 
     height: 480px;
     font-size: 20px;
  
@@ -30,7 +40,7 @@ body{
 }
 .detalhes .rooms img{
     width: 250px;
-    margin-top: 5px;
+
     margin-left: -250px;
 }
 section img{
