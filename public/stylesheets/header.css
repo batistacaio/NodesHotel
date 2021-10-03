@@ -2,6 +2,7 @@ html,body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 header {
     background-color: rgba(20, 39, 74, 0.5);

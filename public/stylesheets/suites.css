@@ -1,0 +1,33 @@
+.detalhes{
+    
+    display: flex;
+    justify-content: center;
+}
+.detalhes .rooms img{
+    width: 250px;
+    margin-top: 5px;
+}
+section img{
+    width: 20px;
+}
+.devices{
+   
+    background-color:transparent;
+    margin-top: 65px;
+    height: 50%;
+    width: 350px;
+    border-radius: 28px;
+    border: 3px solid #1E90FF;
+   
+}
+.devices img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.devices div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 30px;
+}
