@@ -56,9 +56,9 @@ section img{
     border: 1px solid #1E90FF;
     font-size: 20px;
     margin-right: 200px;
-    
-   
+      
 }
+
 .devices img{
     width: 30px;
     height: 30px;
@@ -75,6 +75,7 @@ section img{
 }
 .devices div:hover{
 background-color: #00CED1;
+transition: 2s;
 }
 
 .fotos {
@@ -89,4 +90,5 @@ background-color: #00CED1;
 }
 .fotos img:hover{
    -webkit-transform: scale(1.8);
+   transition: 2s;
 }
