@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 .footerWrapper{
+
   background-color: #14274A;
   position: absolute;
   margin: 0;
@@ -16,7 +17,7 @@
 
 .socialMedia{
     position: relative;
-    top: -15em;
+    top: 2em;
     left: 98em;
   }
 

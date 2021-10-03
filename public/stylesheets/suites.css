@@ -1,11 +1,37 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap');
+
+body{
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
 .detalhes{
-    
+   
     display: flex;
     justify-content: center;
+    position: relative;
+    justify-content: space-between;
+}
+.parag{
+   
+    width: 600px;
+    margin-left: 20px;
+    border: 1px solid #1e90ff;
+    border-radius: 28px;
+    margin-top: 80px;
+    height: 480px;
+    font-size: 20px;
+ 
+    
+}
+.parag p{
+    margin-left: 15px;
 }
 .detalhes .rooms img{
     width: 250px;
     margin-top: 5px;
+    margin-left: -250px;
 }
 section img{
     width: 20px;
@@ -13,21 +39,44 @@ section img{
 .devices{
    
     background-color:transparent;
-    margin-top: 65px;
+    margin-top: 50px;
     height: 50%;
     width: 350px;
     border-radius: 28px;
-    border: 3px solid #1E90FF;
+    border: 1px solid #1E90FF;
+    font-size: 20px;
+    margin-right: 200px;
+    
    
 }
 .devices img{
     width: 30px;
     height: 30px;
     margin-right: 5px;
+    margin-left: 15px;
 }
 .devices div{
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-left: 30px;
+    border-radius: 28px;
+
+    width: 350px;
+}
+.devices div:hover{
+background-color: #00CED1;
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+.fotos img{
+    width: 200px;
+    margin-bottom: 5px;
+ 
+}
+.fotos img:hover{
+   -webkit-transform: scale(1.8);
 }
