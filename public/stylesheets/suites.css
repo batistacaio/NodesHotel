@@ -49,11 +49,11 @@ section img{
 }
 .devices{
    
-    background-color:transparent;
+    background-color: rgba(72,209,204,0.1);
     margin-top: 50px;
     height: 50%;
     width: 350px;
-    border-radius: 28px;
+    border-radius: 20px;
     border: 1px solid #1E90FF;
     font-size: 20px;
     margin-right: 200px;
