@@ -16,16 +16,36 @@
 }
 
 .socialMedia{
+    display: flex;
     position: relative;
-    top: 2em;
-    left: 98em;
+    top: 4em;
+    left: 78em;
+    width: 450px;
+    height: 80px;
+   
+  }
+  .socialMedia ul{
+    position: absolute;
+    display: flex;
+   
+  }
+  .socialMedia ul li{
+    position: relative;
+    margin-left: 20px;
+  }
+.socialMedia img{
+
+  margin-bottom: 0px;
+
+}
+  .newsletter {
+   
+    position: relative;
+    bottom: 10em;
+    left: 90em;
+    color:#FFFAFA;
   }
 
-  .newsletter {
-    position: relative;
-    top: -15em;
-    left: 90em;
-  }
 
   ul img{
     width: 30px;
