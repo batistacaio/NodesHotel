@@ -1,0 +1,6 @@
+.formulario{
+    display: flex;
+}
+.formulario h1{
+    text-align: center;
+}

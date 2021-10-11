@@ -12,5 +12,8 @@ router.get('/contato', function(req, res, next) {
 router.get('/suites', function(req, res, next) {
   res.render('suites');
 });
+router.get('/reservas', function(req, res, next) {
+  res.render('reservas');
+});
 
 module.exports = router;
