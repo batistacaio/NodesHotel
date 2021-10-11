@@ -1,37 +1,30 @@
-body{
-  margin-left:auto;
+body {
+  margin-left: auto;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
 }
-
-.greetings{
+.greetings {
   display: flex;
   justify-content: center;
-  margin-top:34px;
-  margin-bottom: 40px;
-  font-size: 40px;
-  margin-left: 50px;
-  margin-right: 50px; 
+  font-size: 30px;
+  font-weight: 400;
 }
-
 .presentation {
-display: flex;
-align-items: center;
-font-size: 22px;
-width: 800px;
-margin: 0 auto;
-text-align: justify;
-justify-content: center;
-margin-bottom: 30px;
+  font-size: 20px;
+  width: 80%;
+  margin: auto;
+  text-align: justify;
 }
-
-.rooms{
-box-sizing: border-box;
-margin-left: 5px;
-margin-right: 5px;
+.rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-
-.box{
+.box {
   position: absolute;
   background-color: #008080;
   margin-bottom: 5px;
@@ -39,4 +32,51 @@ margin-right: 5px;
   margin-right: 5px;
   height: 230px;
   width: 100vw;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 970px;
+  margin: 25px;
+}
+.text-card {
+  width: 50%;
+  padding-left: 20px;
+  border-left: 2px solid #14274a;
+}
+.card p {
+  font-weight: 400;
+}
+.card button {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #e0b973;
+  border: none;
+  border-radius: 10%;
+  padding: 10px;
+  width: 100px;
+}
+.foto1 {
+  width: 400px;
+}
+.depoimentos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+.depoimentos h3{
+  font-family: 'Helvetica Neue',serif !important;
+  font-size: 25px;
+}
+
+.botoes button{
+  background: #e0b973;
+  border: none;
+  border-radius: 10%;
+  padding: 10px;
 }
