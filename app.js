@@ -3,12 +3,14 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const session = require('express-session');
 
 var indexRouter = require('./routes/index');
 var contatoRouter = require("./routes/index");
 var suitesRouter = require("./routes/index");
 var reservasRouter = require("./routes/index")
 var loginRouter = require("./routes/index");
+var cadastroRouter = require("./routes/index");
 
 var app = express();
 
@@ -21,12 +23,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+  secret: 'Nodes Hotel',
+  resave: false,
+  saveUninitialized: true,
+}));
 
 app.use('/', indexRouter);
 app.use("/contato", contatoRouter);
 app.use("/suites", suitesRouter);
 app.use("/reservas", reservasRouter);
 app.use("/login", loginRouter);
+app.use("/cadastro", cadastroRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

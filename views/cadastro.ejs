@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nodes Hotel | Login</title>
+    <title>Nodes Hotel | Cadastro</title>
     <link rel="stylesheet" href="stylesheets/login.css" type="text/css">
     <link rel="stylesheet" href="stylesheets/footer.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
                 </ul>
             </nav>
             <div class="contactLogo">
-                <h2>Entrar</h2>
+                <h2>Cadastre-se!</h2>
             </div>
         </div>
     </header>
@@ -44,14 +44,17 @@
     <div class="span">
         <div class="loginBox">
             <div class="loginForm">
-                <h2>Insira seus dados</h2>
+                <h2>Insira os dados solicitados:</h2>
                 <form action="#" method="POST">
-                    <label for="usuario">Usuário: </label>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome"><br>
+                    <label for="usuario">E-mail: </label>
                     <input type="email" name="email" id="email"><br>
                     <label for="senha">Senha: </label>
                     <input type="password" name="senha" id="senha"><br>
-                    <button type="submit">Entrar</button><br>
-                    <p>Não possui uma conta? <a href="#">Cadastre-se</a>!</p>
+                    <label for="senha">Confirme a senha: </label>
+                    <input type="password" name="senha" id="senha"><br>
+                    <button type="submit">Enviar</button><br>
                 </form>
             </div>
         </div>

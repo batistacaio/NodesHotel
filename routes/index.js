@@ -18,6 +18,11 @@ router.get('/reservas', function(req, res, next) {
 
 router.get('/login', function(req, res, next) {
   res.render('login');
-})
+});
+
+router.get('/cadastro', function(req, res, next) {
+  res.render('cadastro');
+});
+
 
 module.exports = router;
