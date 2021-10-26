@@ -1,0 +1,128 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #14274A;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-position: center;
+    font-family: "Playfair", serif;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 380px;
+}
+
+.logo {
+    background-color: #E0B973;
+    border-radius: 0px 0px 50px 50px;
+    height: 150px;
+    width: 300px;
+    justify-self: center;
+    margin-left: 170px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.1px;
+}
+
+.logo h1 {
+    font-size: 75px;
+    color:#14274A;
+    font-weight: 500;
+    letter-spacing: -7px;
+}
+
+.logo h2 {
+    letter-spacing: 5px;
+    color:#14274A;
+    font-weight: 400;
+}
+
+nav {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    height: 90px;
+    width: 40%;
+    color: #FFF;
+}
+
+.contatoNav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contatoNav ul li {
+    list-style-type: none;
+    font-size: 20px;            
+}
+
+.contatoNav ul a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.contatoNav ul a:hover {
+    color: black;
+}
+
+.contactLogo h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    position: relative;
+    top: 47%;
+    right: 500%;
+}
+
+.contactMessage{
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    left: 8%;
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+
+label{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+input{
+    margin: 8px;
+    padding: 5px;
+    width: 300px;
+}
+
+button{
+    margin: 8px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #14274A;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+}
+
+h2{
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.loginBox{
+}
