@@ -6,11 +6,11 @@ var logger = require('morgan');
 const session = require('express-session');
 
 var indexRouter = require('./routes/index');
-var contatoRouter = require("./routes/index");
-var suitesRouter = require("./routes/index");
-var reservasRouter = require("./routes/index")
-var loginRouter = require("./routes/index");
-var cadastroRouter = require("./routes/index");
+var contatoRouter = require("./routes/contato");
+var suitesRouter = require("./routes/suites");
+var reservasRouter = require("./routes/reservas")
+var loginRouter = require("./routes/login");
+var cadastroRouter = require("./routes/cadastro");
 
 var app = express();
 
