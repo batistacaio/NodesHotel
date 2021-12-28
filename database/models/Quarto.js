@@ -1,10 +1,18 @@
 module.exports = (sequelize, DataTypes) => {
     const Quarto = sequelize.define("Quarto", {
-        nome: DataTypes.STRING(100),
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
+            primaryKey: true
+        },
+        nome: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        } 
     },
     {
-        tableName: "quartos",
-        Timestamps: false
+        timestamps: false
     });
 
     return Quarto;

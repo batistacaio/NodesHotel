@@ -1,11 +1,22 @@
 module.exports = (sequelize, DataTypes) => {
     const Reserva = sequelize.define("Reserva", {
-        data_entrada: DataTypes.DATE,
-        data_saida: DataTypes.DATE,
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
+            primaryKey: true           
+        },
+        data_entrada: {
+            type: DataTypes.DATE,
+            allowNull: false
+        },
+        data_saida: {
+            type: DataTypes.DATE,
+            allowNull: false
+        }
     },
     {
-        tableName: "reservas",
-        Timestamps: false
+        timestamps: false
     });
 
     return Reserva;

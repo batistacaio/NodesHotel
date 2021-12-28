@@ -1,12 +1,26 @@
 module.exports = (sequelize, DataTypes) => {
     const Hospede = sequelize.define("Hospede", {
-        nome: DataTypes.STRING(100),
-        email: DataTypes.STRING(75),
-        senha: DataTypes.STRING(100),
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            allowNull: false,
+            primaryKey: true
+        },
+        nome: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
+        email: {
+            type: DataTypes.STRING(75),
+            allowNull: false
+        },
+        senha: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        }
     },
     {
-        tableName: "hospedes",
-        Timestamps: false
+        timestamps: false
     });
 
     return Hospede;
