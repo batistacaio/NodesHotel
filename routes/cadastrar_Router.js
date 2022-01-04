@@ -4,7 +4,8 @@ var usuarioController = require("../controllers/usuarioController");
 
 
 
-router.get('/', usuarioController.index);
+router.get('/', usuarioController.showCadastro);
+
 
 
 

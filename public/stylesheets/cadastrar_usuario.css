@@ -30,13 +30,15 @@ body {
     width: 50vw;
     height: 130vh;
     margin-top: 10vh;
-    justify-content: center;
     border-style: solid;
     border-radius: 28px;
     border-width: 2px;
     border-color: #000000;
     margin-bottom: 15px;
    
+}
+.container h1{
+    margin: auto;
 }
 .dropdown {
     min-width: 350px;

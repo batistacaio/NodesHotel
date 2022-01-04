@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+}
+
+.container {
+    display: inline-block;
+    /* position: relative; */
+    padding: 50px;
+    margin: auto;
+    border-style: double;
+    border-radius: 28px;
+    width: 400px;
+    background-color: #008B8B30;
+    margin-top: 20vh;
+
+}
+input {
+    width: 350px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    
+}
+button {
+    width: 90px;
+    height: 30px;
+}
+input:focus{
+    background-color: aquamarine;
+}
+img {
+    width: 3vw;
+    height: 6vh;
+  
+  }
