@@ -1,0 +1,93 @@
+body {
+    display: flex;
+	margin: 0;
+	padding: 0;
+	border: 0;  
+    font-family: courier new;
+    font-style: italic;
+    font-size: 12px;
+}
+.container {
+    display:inline-block;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+    width: 50vw;
+    height: 130vh;
+    margin-top: 2vh;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 28px;
+    border-width: 2px;
+    border-color: #000000;
+    margin-bottom: 15px;
+   
+}
+.dropdown {
+    min-width: 350px;
+    min-height: 37px;
+    font-style: italic;
+    border-radius: 10px;
+}
+input {
+    min-width: 400px;
+    min-height: 30px;
+    font-style: italic;
+    border-radius: 10px;
+    border-style: solid;
+
+ 
+    
+}
+input:focus {
+    border: 31px;
+    background-color: #E0FFFF;
+}
+
+#number {
+    min-width: 238px;
+}
+
+#ddd {
+    min-width: 20px;
+}
+#nascimento {
+    min-width: 210px;
+}
+ .login input{
+     min-width: 240px;
+ }
+.dicas {
+  line-height: 1px;
+  font-size: 12px;
+    
+}
+.botao {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 40%;
+}
+.address #cidade{
+    min-width: 220px;
+}
+.address #UF {
+    min-width: 90px;
+}
+button {
+    width: 150px;
+    height: 120x;
+   font-size: 25px;
+}
+
+#fotoPerfil {
+    border-style: none;
+    border-radius: 0px;
+}
+#bot {
+    color: red;
+ width: 90px;
+ height: 35px;
+ font-size: 14px;
+ font-style: oblique;
+
+}

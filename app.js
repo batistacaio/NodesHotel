@@ -11,6 +11,7 @@ var suitesRouter = require("./routes/suites");
 var reservasRouter = require("./routes/reservas")
 var loginRouter = require("./routes/login");
 var cadastroRouter = require("./routes/cadastro");
+var cadastro2Router = require("./routes/cadastro2");
 
 var app = express();
 
@@ -35,6 +36,7 @@ app.use("/suites", suitesRouter);
 app.use("/reservas", reservasRouter);
 app.use("/login", loginRouter);
 app.use("/cadastro", cadastroRouter);
+app.use("/cadastro2", cadastro2Router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
