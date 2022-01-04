@@ -12,7 +12,16 @@
 
 </head>
 <body>
+<div class="header">
 
+<a href="/"><h1>Home</h1></a>&nbsp&nbsp&nbsp
+<a href="reservas"><h1>Reservas</h1></a>&nbsp&nbsp&nbsp
+<a href="suites"><h1>Suítes</h1></a>&nbsp&nbsp&nbsp
+<a href="contato"><h1>Contato</h1></a>&nbsp&nbsp&nbsp
+<a href="cadastro2"><h1>Cadastro</h1></a>&nbsp&nbsp&nbsp
+<a href="login"><h1>Login</h1></a>&nbsp&nbsp&nbsp
+
+</div>
     <div class="container">
         <h1>CRIAR CONTA</h1>
        
@@ -22,7 +31,7 @@
         <span class ='formulario'><form action='/cadastro' method ='post' id ="form1" enctype="multipart/form-data">
        
             <select class="dropdown" name="paises" id="paises">
-                <option class="selected" selected disabled>Selecione um país</option>
+                <option class="selected" selected disabled>De qual país você está vindo?</option>
                 <option value="Brasil">Brasil</option>
                 <option value="Afeganistão">Afeganistão</option>
                 <option value="África do Sul">África do Sul</option>
@@ -274,7 +283,7 @@
                 <option value="Zimbabwe">Zimbabwe</option>
                 <option value="Zâmbia">Zâmbia</option>
             </select> <br>
-            <label>Escolha o seu país de origem</label><br><br><br>
+            <label>Escolha um país</label><br><br><br>
 
 
                 <input type="file" name = "foto" id="foto"><br>
@@ -310,7 +319,7 @@
         <div class="containe3">
             <h1>DADOS DE LOGIN</h1>
            
-            <h2>Informe e-mail e senha para logar no site</h2>
+          
             <span class="login">
 
                 <input type="email" name = "email_login" id="email_login" placeholder="e-mail">&nbsp&nbsp&nbsp<input type="email" name = "match_email_login" id="match_email_login" placeholder="confirme o seu e-mail">
@@ -318,13 +327,13 @@
                 <br><br><br>
 
                 <input type="password" name="senha" id="senha" placeholder="senha">&nbsp&nbsp&nbsp<input type="password" name = "match_password" id="match_email_login" placeholder="confirme a sua senha">
-                </span>
+                </span><br><br>
                 <span class="dicas">
               <p>Minímo de 6 caracteres</p>
               <p>Deve conter pelo menos um número</p>
               <p>Deve conter pelo menos uma letra maiúscula</p>
                  </span>
-            <br><br><br>
+            <br>
        
 
            

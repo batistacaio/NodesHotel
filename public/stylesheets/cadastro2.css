@@ -7,14 +7,29 @@ body {
     font-style: italic;
     font-size: 12px;
 }
+.header{
+    position: absolute;
+    display: flex;
+    margin-left: 50vw;
+
+
+}
+.header a{
+  text-decoration-line: none;
+  color: #FFF;
+
+}
+
+
+
 .container {
     display:inline-block;
     margin: auto;
     padding: 50px;
-    background-color: white;
+    background-color: #1E90FF30;
     width: 50vw;
     height: 130vh;
-    margin-top: 2vh;
+    margin-top: 10vh;
     justify-content: center;
     border-style: solid;
     border-radius: 28px;
@@ -41,7 +56,7 @@ input {
 }
 input:focus {
     border: 31px;
-    background-color: #E0FFFF;
+    background-color: #00FFFF70;
 }
 
 #number {
@@ -58,8 +73,11 @@ input:focus {
      min-width: 240px;
  }
 .dicas {
-  line-height: 1px;
-  font-size: 12px;
+  line-height: 3px;
+  font-size: 16px;
+  font-weight:bold;
+  color: yellow;
+  z-index: 10;
     
 }
 .botao {
