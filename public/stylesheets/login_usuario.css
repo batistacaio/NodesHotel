@@ -30,8 +30,15 @@ button {
 input:focus{
     background-color: aquamarine;
 }
-img {
+/* img {
     width: 3vw;
     height: 6vh;
   
-  }
+  } */
+
+  a img {
+    position: absolute;
+    width: 50px;
+    margin-top: -200px;
+    margin-left: 50px;
+    }
