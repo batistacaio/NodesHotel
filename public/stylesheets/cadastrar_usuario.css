@@ -5,7 +5,7 @@ body {
 	border: 0;  
     font-family: courier new;
     font-style: italic;
-    font-size: 12px;
+    font-size: 13px;
 }
 .header{
     position: absolute;
@@ -28,7 +28,7 @@ body {
     padding: 50px;
     background-color: #008B8B30;
     width: 50vw;
-    height: 130vh;
+    height: 145vh;
     margin-top: 10vh;
     border-style: solid;
     border-radius: 28px;
@@ -84,8 +84,9 @@ input:focus {
 }
 .botao {
     position: relative;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 40%;
+    
 }
 .address #cidade{
     min-width: 220px;
@@ -95,19 +96,12 @@ input:focus {
 }
 button {
     width: 150px;
-    height: 120x;
-   font-size: 25px;
+    height: 160x;
+    font-size: 25px;
 }
 
 #fotoPerfil {
     border-style: none;
     border-radius: 0px;
 }
-#bot {
-    color: red;
- width: 90px;
- height: 35px;
- font-size: 14px;
- font-style: oblique;
 
-}
