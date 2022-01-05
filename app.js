@@ -40,6 +40,10 @@ app.use("/cadastro", cadastroRouter);
 app.use("/cadastrar", cadastrar_Router);
 app.use('/logar', login_Router);
 
+app.use((req, res, next)=>{
+  return res.status(404).render('tela_de_erro');
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
