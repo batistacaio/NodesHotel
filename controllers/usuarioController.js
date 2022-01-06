@@ -1,5 +1,5 @@
 const usuarios = [];
-// const bcrypt = require('bcryptjs')
+const bcrypt = require('bcryptjs')
 
 const usuarioController = {
     showCadastro: function(req,res,next){
@@ -22,7 +22,7 @@ const usuarioController = {
         data_de_nascimento: nascimento,
         endereço: [endereco + ' ,'+ "bairro :" +bairro +" "+ "cep:" + cep +" " + cidade +" "+ uf],
         usuario: usuario,
-        senha: senha
+        senha: bcrypt.hashSync(senha,12)
 
         });
         res.send("usuario cadastrado com sucesso")
