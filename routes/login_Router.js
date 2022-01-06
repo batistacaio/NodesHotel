@@ -5,6 +5,7 @@ var usuarioController = require("../controllers/usuarioController");
 
 
 router.get('/', usuarioController.showLogin);
+router.post('/', usuarioController.login);
 
 
 

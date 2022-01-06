@@ -9,7 +9,7 @@ const usuarioController = {
       res.render('login_usuario')
     },
     cadastrar: function(req, res, next){
-      const { country, nome, sobrenome, email, cpf, ddd, number, nascimento, endereco, cep, bairro, cidade, uf, usuario, senha  } = req.body;
+      const { country, nome, sobrenome, email, cpf, ddd, number, nascimento, endereco, cep, bairro, cidade, uf, user, senha  } = req.body;
       usuarios.push(
         {
         country: country,
@@ -21,13 +21,22 @@ const usuarioController = {
         telefone: number,
         data_de_nascimento: nascimento,
         endereço: [endereco + ' ,'+ "bairro :" +bairro +" "+ "cep:" + cep +" " + cidade +" "+ uf],
-        usuario: usuario,
+        user: user,
         senha: bcrypt.hashSync(senha,12)
 
         });
-        res.send("usuario cadastrado com sucesso")
+        res.render('login_usuario')
         console.log(usuarios)
-    }
+    },
+    login: function(req, res, next){
+
+      const { user, senha } = req.body;
+      const usuarioLogado = usuarios.find((usuario) => usuario.user == user && bcrypt.compareSync(senha, usuario.senha));
+      if(usuarioLogado != null){
+          res.send("usuario logado");
+      }else{ res.send('O nome de usuário ou a senha não correspondem')}
+      }
+       
   };
   
   module.exports = usuarioController;

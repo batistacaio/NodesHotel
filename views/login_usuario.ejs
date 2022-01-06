@@ -19,18 +19,19 @@
     
     <span class = container>
         <h1>LOGIN</h1>
-    <form action="/usuario/login" method= 'POST'>
+    <form action="/logar" method= 'POST'>
 
-   <input type="email" name= "email" id = "email" placeholder="email de acesso" autocomplete="off"><br><br>
+   <input type="text" name= "user" id = "user" placeholder="nome de usuário" ><br><br>
 
-   <input type="password" name = 'senha' id = 'senha' placeholder="senha de acesso" autocomplete="off">
+   <input type="password" name = 'senha' id = 'senha' placeholder="senha de acesso" >
    <br><br><br>
    <button type="submit">Entrar</button>
 
     </form>
 <br><br><br>
     <form name = 'button' id= 'button'>
-        <a href="/cadastrar">
+        <a href="/cadastrar"> 
+            <!-- esse botao acima é apenas um botao com link para acessar a pasta de cadastro. -->
             <input type="button" value = 'Não tenho cadastro!'>
         </a>
      
