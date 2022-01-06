@@ -18,20 +18,24 @@
 <a href="reservas"><h1>Reservas</h1></a>&nbsp&nbsp&nbsp
 <a href="suites"><h1>Suítes</h1></a>&nbsp&nbsp&nbsp
 <a href="contato"><h1>Contato</h1></a>&nbsp&nbsp&nbsp
-<a href="cadastrar"><h1>Cadastro</h1></a>&nbsp&nbsp&nbsp
 <a href="logar"><h1>Login</h1></a>&nbsp&nbsp&nbsp
 
 </div>
     <div class="container">
         <h1>CRIAR CONTA</h1>
-       
-        <h2>Informe seus dados pessoais</h2>
-        <br><br>
+       <br><br>
 
+        <form action="" name='form2' id='form2'>
+            <input type="file" name = "foto" id="foto">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type='submit' name = "btn1" id="btn1">Upload</button><br>
+       
+        </form>
+        <label>Carregue uma foto para o seu perfil</label><br><br><br><br>
+        <h1>DADOS PESSOAIS</h1>
+        <br><br>
         <span class ='formulario'><form action='/cadastrar' method ='POST' id ="form1" enctype="multipart/form-data">
        
             <select class="dropdown" name="country" id="country">
-                <option class="selected" selected disabled>De qual país você está vindo?</option>
+                <option class="selected" selected disabled>Nacionalidade</option>
                 <option value="Brasil">Brasil</option>
                 <option value="Afeganistão">Afeganistão</option>
                 <option value="África do Sul">África do Sul</option>
@@ -282,49 +286,46 @@
                 <option value="Wallis e Futuna">Wallis e Futuna</option>
                 <option value="Zimbabwe">Zimbabwe</option>
                 <option value="Zâmbia">Zâmbia</option>
-            </select> <br>
-            <label>Escolha um país</label><br><br><br>
-
-
-                <input type="file" name = "foto" id="foto"><br>
-                <label>Carregue uma foto para o seu perfil</label>
-
-       
-
+            </select>
            
-            <br><br><br>
+
+
+
+
+    
+            <br><br>
             <input type="text" name = "nome" id="nome" placeholder="Nome" autocomplete="off">&nbsp&nbsp&nbsp <input type="text" name = "sobrenome" id="sobrenome" placeholder="Sobrenome" autocomplete="off">
             <br>
             <br>
-            <br>
+            
             <input type="email" name = "email" id="email" placeholder="e-mail">&nbsp&nbsp&nbsp <input type="text" name = "cpf" id="cpf" placeholder="CPF" autocomplete="off">
-           <br><br><br>
+           <br><br>
            <input type="text" name = "ddd" id="ddd" placeholder="DDD"><input type="text" name = "number" id="number" placeholder="telefone"> &nbsp&nbsp&nbsp <input type="text" name = "profissao" id="profissao" placeholder="Profissão">
-            <br><br><br>
+            <br><br>
             <input type="date" name="nascimento" id="nascimento">
-            <br>
+            <br><br>
             <label for="nascimento">Data de nascimento</label>
-            <br><br><br>
+            <br><br>
 
       
         <div class="container2">
-            <h1>ENDEREÇO DE RESIDÊNCIA</h1>
+            <h1>ENDEREÇO DE RESIDÊNCIA</h1><br><br>
            
             <span class="address">
 
-                <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço">&nbsp&nbsp&nbsp<input type="text" name = 'cep' id = "cep" placeholder="CEP"><br><br><br>
+                <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço">&nbsp&nbsp&nbsp<input type="text" name = 'cep' id = "cep" placeholder="CEP"><br><br>
                 <input type="text" name = 'complemento' id = 'complemento' placeholder="Complemento">&nbsp&nbsp&nbsp<input type="text" name = 'cidade' id = "cidade" placeholder="Cidade">&nbsp&nbsp&nbsp<input type="text" id = "UF" placeholder="UF">
      
-<br><br><br><br><br>
+<br><br><br><br>
         <div class="containe3">
-            <h1>DADOS DE LOGIN</h1>
+            <h1>DADOS DE LOGIN</h1><br><br>
            
           
             <span class="login">
 
                 <input type="email" name = "email_login" id="email_login" placeholder="e-mail">&nbsp&nbsp&nbsp<input type="email" name = "match_email_login" id="match_email_login" placeholder="confirme o seu e-mail">
 
-                <br><br><br>
+                <br><br>
 
                 <input type="password" name="senha" id="senha" placeholder="senha">&nbsp&nbsp&nbsp<input type="password" name = "match_password" id="match_email_login" placeholder="confirme a sua senha">
                 </span><br><br>
@@ -346,6 +347,7 @@
             <br><br><br>
             <span class = "botao">
     <button type="submit" form="form1">Cadastrar</button></span>
+
 </body>
 
 </html>
