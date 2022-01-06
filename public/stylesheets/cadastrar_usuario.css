@@ -36,11 +36,19 @@ body {
     border-color: #000000;
     margin-bottom: 15px;
    
+   
 }
 #btn1{
 
    border-radius: 28px;
 
+}
+.título h1{
+display: flex;
+width: 50vw;
+margin: auto;
+font-size: 35px;
+justify-content: center;
 }
 #form2{
 
@@ -72,6 +80,9 @@ input:focus {
 }
 
 #ddd {
+    min-width: 20px;
+}
+#uf{
     min-width: 20px;
 }
 #nascimento {

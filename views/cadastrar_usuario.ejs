@@ -22,7 +22,9 @@
 
 </div>
     <div class="container">
-        <h1>CRIAR CONTA</h1>
+        <span class = 'título'>
+        <h1>CADASTRE-SE EM NOSSO SITE</h1>
+    </span>
        <br><br>
 
         <form action="" name='form2' id='form2'>
@@ -32,7 +34,8 @@
         <label>Carregue uma foto para o seu perfil</label><br><br><br><br>
         <h1>DADOS PESSOAIS</h1>
         <br><br>
-        <span class ='formulario'><form action='/cadastrar' method ='POST' id ="form1" enctype="multipart/form-data">
+        <span class ='formulario'>
+            <form action='/cadastrar' method ='POST' id ="form1">
        
             <select class="dropdown" name="country" id="country">
                 <option class="selected" selected disabled>Nacionalidade</option>
@@ -294,11 +297,11 @@
 
     
             <br><br>
-            <input type="text" name = "nome" id="nome" placeholder="Nome" autocomplete="off">&nbsp&nbsp&nbsp <input type="text" name = "sobrenome" id="sobrenome" placeholder="Sobrenome" autocomplete="off">
+            <input type="text" name = "nome" id="nome" placeholder="Nome">&nbsp&nbsp&nbsp <input type="text" name = "sobrenome" id="sobrenome" placeholder="Sobrenome" >
             <br>
             <br>
             
-            <input type="email" name = "email" id="email" placeholder="e-mail">&nbsp&nbsp&nbsp <input type="text" name = "cpf" id="cpf" placeholder="CPF" autocomplete="off">
+            <input type="email" name = "email" id="email" placeholder="e-mail">&nbsp&nbsp&nbsp <input type="text" name = "cpf" id="cpf" placeholder="CPF" >
            <br><br>
            <input type="text" name = "ddd" id="ddd" placeholder="DDD"><input type="text" name = "number" id="number" placeholder="telefone"> &nbsp&nbsp&nbsp <input type="text" name = "profissao" id="profissao" placeholder="Profissão">
             <br><br>
@@ -314,7 +317,7 @@
             <span class="address">
 
                 <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço">&nbsp&nbsp&nbsp<input type="text" name = 'cep' id = "cep" placeholder="CEP"><br><br>
-                <input type="text" name = 'complemento' id = 'complemento' placeholder="Complemento">&nbsp&nbsp&nbsp<input type="text" name = 'cidade' id = "cidade" placeholder="Cidade">&nbsp&nbsp&nbsp<input type="text" id = "UF" placeholder="UF">
+                <input type="text" name = 'bairro' id = 'bairro' placeholder="Bairro">&nbsp&nbsp&nbsp<input type="text" name = 'cidade' id = "cidade" placeholder="Cidade">&nbsp&nbsp&nbsp<input type="text" name = "uf" id = "uf" placeholder="UF">
      
 <br><br><br><br>
         <div class="containe3">
@@ -323,7 +326,7 @@
           
             <span class="login">
 
-                <input type="email" name = "email_login" id="email_login" placeholder="e-mail">&nbsp&nbsp&nbsp<input type="email" name = "match_email_login" id="match_email_login" placeholder="confirme o seu e-mail">
+                <input type="text" name = "usuario" id="usuario" placeholder="nome de usuario">
 
                 <br><br>
 
