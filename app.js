@@ -39,6 +39,7 @@ app.use("/login", loginRouter);
 app.use("/cadastro", cadastroRouter);
 app.use("/cadastrar", cadastrar_Router);
 app.use('/logar', login_Router);
+app.use('/logout', function(req, res){req.session.destroy(); res.send("usuario deslogado")})
 
 app.use((req, res, next)=>{
   return res.status(404).render('tela_de_erro');

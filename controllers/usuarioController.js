@@ -33,6 +33,7 @@ const usuarioController = {
       const { user, senha } = req.body;
       const usuarioLogado = usuarios.find((usuario) => usuario.user == user && bcrypt.compareSync(senha, usuario.senha));
       if(usuarioLogado != null){
+        req.session.usuario_logado = true
           res.send("usuario logado");
       }else{ res.send('O nome de usuário ou a senha não correspondem')}
       }

@@ -4,7 +4,7 @@ var reservasController = require("../controllers/reservasController");
 
 
 
-router.get('/', reservasController.index);
+router.get('/',reservasController.index);
 
 
 
