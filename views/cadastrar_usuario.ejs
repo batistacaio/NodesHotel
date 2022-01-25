@@ -38,8 +38,8 @@
         <span class ='formulario'>
             <form action='/cadastrar' method ='POST' id ="form1">
        
-            <select class="dropdown" name="country" id="country">
-                <option class="selected" selected disabled>Nacionalidade</option>
+            <select class="dropdown" name="country" id="country" required=true>
+                <option value="">Nacionalidade</option>
                 <option value="Brasil">Brasil</option>
                 <option value="Afeganistão">Afeganistão</option>
                 <option value="África do Sul">África do Sul</option>
@@ -298,17 +298,17 @@
 
     
             <br><br>
-            <input type="text" name = "nome" id="nome" placeholder="Nome">&nbsp&nbsp&nbsp <input type="text" name = "sobrenome" id="sobrenome" placeholder="Sobrenome" >
+            <input type="text" name = "nome" id="nome" placeholder="Nome" required=true>&nbsp&nbsp&nbsp <input type="text" name = "sobrenome" id="sobrenome" placeholder="Sobrenome" required=true>
             <br>
             <br>
             
-            <input type="email" name = "email" id="email" placeholder="e-mail">&nbsp&nbsp&nbsp <input type="text" name = "cpf" id="cpf" placeholder="CPF" >
+            <input type="email" name = "email" id="email" placeholder="e-mail" required=true>&nbsp&nbsp&nbsp <input type="text" name = "cpf" id="cpf" placeholder="CPF" required=true >
            <br><br>
-           <input type="text" name = "ddd" id="ddd" placeholder="DDD"><input type="text" name = "number" id="number" placeholder="telefone"> &nbsp&nbsp&nbsp <input type="text" name = "profissao" id="profissao" placeholder="Profissão">
+           <input type="text" name = "ddd" id="ddd" placeholder="DDD" required=true><input type="text" name = "number" id="number" placeholder="telefone" required=true> &nbsp&nbsp&nbsp <input type="text" name = "profissao" id="profissao" placeholder="Profissão" required=true>
             <br><br>
-            <input type="date" name="nascimento" id="nascimento">
+            <input type="date" name="nascimento" id="nascimento" required=true>
             <br><br>
-            <label for="nascimento">Data de nascimento</label>
+            <label for="nascimento" >Data de nascimento</label>
             <br><br>
 
       
@@ -317,8 +317,8 @@
            
             <span class="address">
 
-                <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço">&nbsp&nbsp&nbsp<input type="text" name = 'cep' id = "cep" placeholder="CEP"><br><br>
-                <input type="text" name = 'bairro' id = 'bairro' placeholder="Bairro">&nbsp&nbsp&nbsp<input type="text" name = 'cidade' id = "cidade" placeholder="Cidade">&nbsp&nbsp&nbsp<input type="text" name = "uf" id = "uf" placeholder="UF">
+                <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço" required=true>&nbsp&nbsp&nbsp<input type="text" name = 'cep' id = "cep" placeholder="CEP" required=true><br><br>
+                <input type="text" name = 'bairro' id = 'bairro' placeholder="Bairro" required=true>&nbsp&nbsp&nbsp<input type="text" name = 'cidade' id = "cidade" placeholder="Cidade" required=true>&nbsp&nbsp&nbsp<input type="text" name = "uf" id = "uf" placeholder="UF" required=true>
      
 <br><br><br><br>
         <div class="containe3">
@@ -327,11 +327,11 @@
           
             <span class="login">
 
-                <input type="text" name = "user" id="user" placeholder="nome de usuario">
+                <input type="text" name = "user" id="user" placeholder="nome de usuario" required=true>
 
                 <br><br>
 
-                <input type="password" name="senha" id="senha" placeholder="senha">&nbsp&nbsp&nbsp<input type="password" name = "match_password" id="match_email_login" placeholder="confirme a sua senha">
+                <input type="password" name="senha" id="senha" placeholder="senha" required=true>&nbsp&nbsp&nbsp<input type="password" name = "match_password" id="match_email_login" placeholder="confirme a sua senha" required=true>
                 </span><br><br>
                 <span class="dicas">
               <p>Minímo de 6 caracteres</p>
@@ -350,7 +350,7 @@
             <!--external button-->
             <br><br><br>
             <span class = "botao">
-    <button type="submit" form="form1">Cadastrar</button></span>
+    <button type="submit" form="form1">CADASTRAR</button></span>
 
 </body>
 
