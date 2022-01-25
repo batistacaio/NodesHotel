@@ -6,13 +6,13 @@ position: relative;
 flex-direction: column;
 border-radius: 18px;
 border-style: double;
-width: 15%;
+width: 20%;
 height: 30%;
 padding: 10px;
 margin: 10px;
 justify-content:center;
 align-items: center;
-margin-left: 50px;
+margin-left: 20px;
 text-align: center;
 
 }
