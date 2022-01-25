@@ -26,7 +26,7 @@ body {
     display:inline-block;
     margin: auto;
     padding: 50px;
-    background-color: #008B8B30;
+    background-color: #1E90FF30;
     width: 50vw;
     height: 145vh;
     margin-top: 10vh;
@@ -69,7 +69,8 @@ input {
     min-height: 30px;
     font-style: italic;
     border-radius: 10px;
-    border-style: solid;
+    border-style:solid;
+   
 
  
     
@@ -78,7 +79,10 @@ input:focus {
     border: 31px;
     background-color: #00FFFF70;
 }
-
+.dropdown:focus {
+    border: 31px;
+    background-color: #00FFFF70;
+}
 #number {
     min-width: 238px;
 }
@@ -106,8 +110,16 @@ input:focus {
 .botao {
     position: relative;
     margin-top: 40px;
-    margin-left: 40%;
-    
+    margin-left: 40%;  
+    width: 30px;
+}
+.botao button {
+    border-radius: 10px;
+    width: 10vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
 }
 .address #cidade{
     min-width: 220px;
@@ -125,4 +137,3 @@ button {
     border-style: none;
     border-radius: 0px;
 }
-
