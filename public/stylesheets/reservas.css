@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
 
-.booking{
+
+.container{
+    display: flex;
+}
+.dados_da_reserva{
 display: flex;
 position: relative;
 flex-direction: column;
@@ -46,4 +50,23 @@ text-align: center;
     width: 150px;
     height: 100px;
 
+}
+.quartos {
+    background-color: red;
+    width: 80vw;
+    display: flex;
+
+}
+.quartos section{
+    width: 20vw;
+    text-align: center;
+    display:block;
+    vertical-align: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+ 
+}
+.quartos img{
+    width: 18vw
 }
