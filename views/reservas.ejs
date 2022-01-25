@@ -4,17 +4,30 @@
 <div class="booking">
 
 <section class="title">
-    <h2>Escolha as datas</h2>
+    <h2>DADOS DA RESERVA</h2>
 </section>
 
 <section class="dates">
-    <p>Data de entrada<input type="text" id="check_in" /></p>
-    <p>Data de saída:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="check_out" /></p>
+    <p>CHECK-IN<input type="date" id="check_in" /></p>
+    <p>CHECK-OUT<input type="date" id="check_out" /></p>
 </section>
-
+<br><br>
 <section class="persons">
-    <div><label for="">Adultos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"></label></div>
-    <div><label for="">Crianças&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"></label></div>
+    <div><label for="">nº de Hóspedes<input type="number" min="0"></label></div><br><br>
+    <div>
+        <label for="">código da suíte</label>
+        <select class='suites' name='suites' id='suites'>
+        <option value="S001">S001</option>
+        <option value="S002">S002</option>
+        <option value="S003">S003</option>
+        <option value="S004">S004</option>
+        <option value="S005">S005</option>
+        <option value="S006">S006</option>
+        <option value="S007">S007</option>
+        <option value="S008">S008</option>
+        </select>
+   </div>
+    
 </section><br><br><br>
 <section class="botao">
     <br><br><br>
