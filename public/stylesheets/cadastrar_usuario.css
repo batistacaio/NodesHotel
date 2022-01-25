@@ -1,0 +1,128 @@
+body {
+    display: flex;
+	margin: 0;
+	padding: 0;
+	border: 0;  
+    font-family: courier new;
+    font-style: italic;
+    font-size: 13px;
+}
+.header{
+    position: absolute;
+    display: flex;
+    margin-left: 50vw;
+
+
+}
+.header a{
+  text-decoration-line: none;
+  color: #FFF;
+
+}
+
+
+
+.container {
+    display:inline-block;
+    margin: auto;
+    padding: 50px;
+    background-color: #008B8B30;
+    width: 50vw;
+    height: 145vh;
+    margin-top: 10vh;
+    border-style: solid;
+    border-radius: 28px;
+    border-width: 2px;
+    border-color: #000000;
+    margin-bottom: 15px;
+   
+   
+}
+#btn1{
+    border-style: hidden;
+   border-radius: 28px;
+   font-size: 16px;
+   width: 80px;
+   font-style: italic
+   ;
+
+}
+.título h1{
+display: flex;
+width: 50vw;
+margin: auto;
+font-size: 35px;
+justify-content: center;
+}
+#form2{
+
+    display: flex;
+}
+.dropdown {
+    min-width: 350px;
+    min-height: 37px;
+    font-style: italic;
+    border-radius: 10px;
+}
+input {
+    min-width: 400px;
+    min-height: 30px;
+    font-style: italic;
+    border-radius: 10px;
+    border-style: solid;
+
+ 
+    
+}
+input:focus {
+    border: 31px;
+    background-color: #00FFFF70;
+}
+
+#number {
+    min-width: 238px;
+}
+
+#ddd {
+    min-width: 20px;
+}
+#uf{
+    min-width: 20px;
+}
+#nascimento {
+    min-width: 210px;
+}
+ .login input{
+     min-width: 240px;
+ }
+.dicas {
+  line-height: 3px;
+  font-size: 16px;
+  font-weight:bold;
+  color: yellow;
+  z-index: 10;
+    
+}
+.botao {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 40%;
+    
+}
+.address #cidade{
+    min-width: 220px;
+}
+.address #UF {
+    min-width: 90px;
+}
+button {
+    width: 150px;
+    height: 160x;
+    font-size: 25px;
+}
+
+#fotoPerfil {
+    border-style: none;
+    border-radius: 0px;
+}
+

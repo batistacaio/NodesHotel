@@ -11,6 +11,8 @@ var suitesRouter = require("./routes/suites");
 var reservasRouter = require("./routes/reservas")
 var loginRouter = require("./routes/login");
 var cadastroRouter = require("./routes/cadastro");
+var cadastrar_Router = require("./routes/cadastrar_Router");
+var login_Router = require('./routes/login_Router')
 
 var app = express();
 
@@ -35,6 +37,13 @@ app.use("/suites", suitesRouter);
 app.use("/reservas", reservasRouter);
 app.use("/login", loginRouter);
 app.use("/cadastro", cadastroRouter);
+app.use("/cadastrar", cadastrar_Router);
+app.use('/logar', login_Router);
+app.use('/logout', function(req, res){req.session.destroy(); res.send("usuario deslogado")})
+
+app.use((req, res, next)=>{
+  return res.status(404).render('tela_de_erro');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
