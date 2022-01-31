@@ -25,7 +25,7 @@ const usuarioController = {
         senha: bcrypt.hashSync(senha,12)
 
         });
-        res.render('login_usuario')
+        res.render('reservas')
         console.log(usuarios)
     },
     login: function(req, res, next){
