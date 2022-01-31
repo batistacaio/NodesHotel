@@ -67,7 +67,8 @@ background-color: honeydew;
     align-items: center;
     margin: auto;
     font-weight: bold;
- 
+    margin-top: 10px;
+    margin-right: 10px;
 }
 .quartos img{
     width: 18vw
