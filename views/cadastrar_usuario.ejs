@@ -38,7 +38,7 @@
         <span class ='formulario'>
             <form action='/cadastrar' method ='POST' id ="form1">
        
-            <select class="dropdown" name="country" id="country" required>
+            <select class="dropdown" name="country" id="country">
                 <option value="">Nacionalidade</option>
                 <option value="Brasil">Brasil</option>
                 <option value="Afeganistão">Afeganistão</option>
@@ -298,15 +298,15 @@
 
     
             <br><br>
-            <input type="text" name = "nome" id="nome" placeholder="Nome" required>&nbsp&nbsp&nbsp <input type="text" name = "sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+            <input type="text" name = "nome" id="nome" placeholder="Nome">&nbsp&nbsp&nbsp <input type="text" name = "sobrenome" id="sobrenome" placeholder="Sobrenome" >
             <br>
             <br>
             
-            <input type="email" name = "email" id="email" placeholder="e-mail" required>&nbsp&nbsp&nbsp <input type="text" name = "cpf" id="cpf" placeholder="CPF" required >
+            <input type="email" name = "email" id="email" placeholder="e-mail" >&nbsp&nbsp&nbsp <input type="text" name = "cpf" id="cpf" placeholder="CPF"  >
            <br><br>
-           <input type="text" name = "ddd" id="ddd" placeholder="DDD" required><input type="text" name = "number" id="number" placeholder="telefone" required> &nbsp&nbsp&nbsp <input type="text" name = "profissao" id="profissao" placeholder="Profissão" required>
+           <input type="text" name = "ddd" id="ddd" placeholder="DDD" ><input type="text" name = "number" id="number" placeholder="telefone" > &nbsp&nbsp&nbsp <input type="text" name = "profissao" id="profissao" placeholder="Profissão" >
             <br><br>
-            <input type="date" name="nascimento" id="nascimento" required>
+            <input type="date" name="nascimento" id="nascimento" >
             <br>
             <label for="nascimento" >Data de nascimento</label>
             <br><br>
@@ -317,8 +317,8 @@
            
             <span class="address">
 
-                <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço" required>&nbsp&nbsp&nbsp<input type="text" name = 'cep' id = "cep" placeholder="CEP" required><br><br>
-                <input type="text" name = 'bairro' id = 'bairro' placeholder="Bairro" required>&nbsp&nbsp&nbsp<input type="text" name = 'cidade' id = "cidade" placeholder="Cidade" required>&nbsp&nbsp&nbsp<input type="text" name = "uf" id = "uf" placeholder="UF" required>
+                <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço" >&nbsp&nbsp&nbsp<input type="text" name = 'cep' id = "cep" placeholder="CEP" ><br><br>
+                <input type="text" name = 'bairro' id = 'bairro' placeholder="Bairro" >&nbsp&nbsp&nbsp<input type="text" name = 'cidade' id = "cidade" placeholder="Cidade" >&nbsp&nbsp&nbsp<input type="text" name = "uf" id = "uf" placeholder="UF" >
      
 <br><br><br><br>
         <div class="containe3">
@@ -327,11 +327,11 @@
           
             <span class="login">
 
-                <input type="text" name = "user" id="user" placeholder="nome de usuario" required>
+                <input type="text" name = "user" id="user" placeholder="nome de usuario" >
 
                 <br><br>
 
-                <input type="password" name="senha" id="senha" placeholder="senha" required>&nbsp&nbsp&nbsp<input type="password" name = "match_password" id="match_email_login" placeholder="confirme a sua senha" required>
+                <input type="password" name="senha" id="senha" placeholder="senha" >&nbsp&nbsp&nbsp<input type="password" name = "match_password" id="match_email_login" placeholder="confirme a sua senha" >
                 </span><br><br>
                 <span class="dicas">
               <p>Minímo de 6 caracteres</p>
@@ -350,7 +350,15 @@
             <!--external button-->
             <br><br><br>
             <span class = "botao">
-    <button type="submit" form="form1">CADASTRAR</button></span>
+    <button type="submit" form="form1">CADASTRAR</button>
+    <br><br>
+    <div class="warn">
+
+    </div>
+
+
+</span>
+
 
 </body>
 

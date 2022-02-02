@@ -137,3 +137,8 @@ button {
     border-style: none;
     border-radius: 0px;
 }
+.warn {
+    background-color: red;
+    width: 50vw;
+    height: 15vh;
+}
