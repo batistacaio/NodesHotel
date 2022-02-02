@@ -33,6 +33,17 @@
        
         </form>
         <label>Carregue uma foto para o seu perfil</label><br><br><br><br>
+        <% if(typeof(errors) != "undefined"){ %>
+
+            <div class="warn">
+                 <ul>
+                     <% errors.forEach((errors)=>{ %>
+                     <p><%= errors.msg %> </p>
+                     <% }) %>
+                 </ul>
+           
+             </div>
+        <% } %>
         <h1>DADOS PESSOAIS</h1>
         <br><br>
         <span class ='formulario'>
@@ -353,21 +364,9 @@
     <button type="submit" form="form1">CADASTRAR</button>
     <br><br>
 
-    <% if(typeof(errors) != "undefined"){ %>
 
-       <div class="warn">
-            <ul>
-                <% errors.forEach((errors)=>{ %>
-                <p><%= errors.msg %> </p>
-                <% }) %>
-            </ul>
-      
 
-   <% } %>
 
-   
-
-</div>
 
 </span>
 
