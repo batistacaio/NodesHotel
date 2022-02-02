@@ -138,7 +138,13 @@ button {
     border-radius: 0px;
 }
 .warn {
+    display:inline-flex;
     background-color: red;
     width: 50vw;
+    height: 15vh;
+}
+.testin{
+    background-color: red;
+    width: 20vw;
     height: 15vh;
 }

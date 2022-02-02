@@ -352,10 +352,22 @@
             <span class = "botao">
     <button type="submit" form="form1">CADASTRAR</button>
     <br><br>
-    <div class="warn">
 
-    </div>
+    <% if(typeof(errors) != "undefined"){ %>
 
+       <div class="warn">
+            <ul>
+                <% errors.forEach((errors)=>{ %>
+                <p><%= errors.msg %> </p>
+                <% }) %>
+            </ul>
+      
+
+   <% } %>
+
+   
+
+</div>
 
 </span>
 

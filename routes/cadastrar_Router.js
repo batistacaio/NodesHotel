@@ -10,19 +10,10 @@ const { check, validationResult, body } = require('express-validator');
 router.get('/', usuarioController.showCadastro);
 
 router.post('/',[
-    check("nome").isLength({min:3}),
-    check("sobrenome").notEmpty(),
-    check("email").isEmail(),
-    check("cpf").notEmpty(),
-    check("number").isNumeric(),
-    check("nascimento").notEmpty(),
-    check("cpf").notEmpty(),
-    check("endereco").notEmpty(),
-    check("cep").notEmpty(),
-    check("bairro").notEmpty(),
-    check("cidade").notEmpty(),
-    check("uf").notEmpty().isLength({max:2}),
-    check("senha").isLength({min:6})
+    check("nome").notEmpty().withMessage('O campo "nome" é de preenchimento obrigatório'),
+    check("sobrenome").notEmpty().withMessage('O campo "sobrenome" é de preenchimento obrigatório'),
+    check("email").isEmail().withMessage('Digite um endereço de e-mail válido')
+
 
 ], usuarioController.cadastrar);
 
