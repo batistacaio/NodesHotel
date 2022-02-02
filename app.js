@@ -12,7 +12,8 @@ var reservasRouter = require("./routes/reservas")
 var loginRouter = require("./routes/login");
 var cadastroRouter = require("./routes/cadastro");
 var cadastrar_Router = require("./routes/cadastrar_Router");
-var login_Router = require('./routes/login_Router')
+var login_Router = require('./routes/login_Router');
+var logMiddleware = require('./middlewares/logDeAcesso')
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
 }));
+app.use(logMiddleware);
 
 app.use('/', indexRouter);
 app.use("/contato", contatoRouter);
