@@ -5,3 +5,10 @@ February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /logout
 February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /logar
 February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
 February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
+February 2nd 2022, 3:24:02 pm - O usuário entrou na URL: /suites
+February 2nd 2022, 3:24:02 pm - O usuário entrou na URL: /reservas
+February 2nd 2022, 3:24:02 pm - O usuário entrou na URL: /cadastrar
+February 2nd 2022, 3:24:02 pm - O usuário entrou na URL: /cadastrar
+February 2nd 2022, 3:24:02 pm - O usuário entrou na URL: /cadastrar
+February 2nd 2022, 3:24:02 pm - O usuário entrou na URL: /cadastrar
+February 2nd 2022, 3:24:02 pm - O usuário entrou na URL: /cadastrar
