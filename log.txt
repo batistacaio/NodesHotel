@@ -5,3 +5,4 @@ February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /logout
 February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /logar
 February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
 February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
+February 2nd 2022, 3:21:39 pm - O usuário entrou na URL: /
