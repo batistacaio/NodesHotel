@@ -137,3 +137,15 @@ button {
     border-style: none;
     border-radius: 0px;
 }
+.warn {
+    display:flex;
+   background-color: #E0FFFF15;
+    width: 50vw;
+    height: 15vh;
+    border-radius: 22px;
+    color: red;
+    font-size: 16px;
+    vertical-align: center;
+    align-items: center;
+    font-weight: bold;
+}

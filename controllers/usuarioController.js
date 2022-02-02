@@ -1,5 +1,6 @@
 const usuarios = [];
-const bcrypt = require('bcryptjs')
+const bcrypt = require('bcryptjs');
+const { check, validationResult, body } = require('express-validator');
 
 const usuarioController = {
     showCadastro: function(req,res,next){
@@ -9,24 +10,31 @@ const usuarioController = {
       res.render('login_usuario')
     },
     cadastrar: function(req, res, next){
-      const { country, nome, sobrenome, email, cpf, ddd, number, nascimento, endereco, cep, bairro, cidade, uf, user, senha  } = req.body;
-      usuarios.push(
-        {
-        country: country,
-        nome: nome,
-        sobrenome: sobrenome,
-        email: email,
-        cpf: cpf,
-        ddd: ddd,
-        telefone: number,
-        data_de_nascimento: nascimento,
-        endereço: [endereco + ' ,'+ "bairro :" +bairro +" "+ "cep:" + cep +" " + cidade +" "+ uf],
-        user: user,
-        senha: bcrypt.hashSync(senha,12)
+      let listaDeErros = validationResult(req);
 
-        });
-        res.render('reservas')
-        console.log(usuarios)
+      if(listaDeErros.isEmpty()){
+
+        const { country, nome, sobrenome, email, cpf, ddd, number, nascimento, endereco, cep, bairro, cidade, uf, user, senha  } = req.body;
+        usuarios.push(
+          {
+          country: country,
+          nome: nome,
+          sobrenome: sobrenome,
+          email: email,
+          cpf: cpf,
+          ddd: ddd,
+          telefone: number,
+          data_de_nascimento: nascimento,
+          endereço: [endereco + ' ,'+ "bairro :" +bairro +" "+ "cep:" + cep +" " + cidade +" "+ uf],
+          user: user,
+          senha: bcrypt.hashSync(senha,12)
+  
+          });
+          res.render('reservas')
+          console.log(usuarios)
+      }else {
+        return res.render("cadastrar_usuario", {errors: listaDeErros.errors})
+      }
     },
     login: function(req, res, next){
 
