@@ -1,8 +1,7 @@
 
-January 31st 2022, 2:59:40 pm - O usuário entrou na URL: /logar
-January 31st 2022, 2:59:40 pm - O usuário entrou na URL: /
-January 31st 2022, 2:59:40 pm - O usuário entrou na URL: /suites
-January 31st 2022, 2:59:40 pm - O usuário entrou na URL: /logout
-January 31st 2022, 2:59:40 pm - O usuário entrou na URL: /reservas
-January 31st 2022, 2:59:40 pm - O usuário entrou na URL: /reservas
-January 31st 2022, 2:59:40 pm - O usuário entrou na URL: /cadastrar
+
+February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
+February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /logout
+February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /logar
+February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
+February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
