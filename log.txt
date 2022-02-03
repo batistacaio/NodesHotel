@@ -8,3 +8,7 @@ February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
 February 2nd 2022, 3:21:39 pm - O usuário entrou na URL: /
 February 3rd 2022, 9:26:46 am - O usuário entrou na URL: /
 February 3rd 2022, 9:26:46 am - O usuário entrou na URL: /favicon.ico
+February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /suites
+February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /reservas
+February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /cadastrar
+February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /cadastrar
