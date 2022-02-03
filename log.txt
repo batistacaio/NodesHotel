@@ -6,3 +6,5 @@ February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /logar
 February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
 February 2nd 2022, 3:18:56 pm - O usuário entrou na URL: /
 February 2nd 2022, 3:21:39 pm - O usuário entrou na URL: /
+February 3rd 2022, 9:26:46 am - O usuário entrou na URL: /
+February 3rd 2022, 9:26:46 am - O usuário entrou na URL: /favicon.ico
