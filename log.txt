@@ -12,3 +12,6 @@ February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /suites
 February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /reservas
 February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /cadastrar
 February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /cadastrar
+February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /
+February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /cadastrar
+February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /cadastrar
