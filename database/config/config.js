@@ -5,5 +5,5 @@ module.exports = {
       "database": "nodeshotel",
       "host": "127.0.0.1",
       "dialect": "mysql"
-    },
+    }
   };
