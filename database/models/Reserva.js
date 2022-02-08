@@ -13,9 +13,34 @@ module.exports = (sequelize, DataTypes) => {
         data_saida: {
             type: DataTypes.DATE,
             allowNull: false
+        },
+        suite_name: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
+        total_hospedes: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
+        hospede1_titular: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
+        hospede_2: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
+        hospede_3: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
+        hospede_4: {
+            type: DataTypes.STRING(100),
+            allowNull: false
         }
     },
-    {
+    {   
+        tableName: 'reserva',
         timestamps: false
     });
 
