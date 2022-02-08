@@ -4,6 +4,7 @@
 .container{
     display: flex;
     background-color: #20B2AA;
+    height: 70vh;
 }
 .dados_da_reserva{
 display: flex;
@@ -11,26 +12,28 @@ position: relative;
 flex-direction: column;
 border-radius: 18px;
 border-style: double;
-width: 20%;
-height: 30%;
-padding: 10px;
-margin: 10px;
+width: 35vw;
+height: 65vh;
+padding: 0px;
+margin: 2px;
 justify-content:center;
 align-items: center;
-margin-left: 20px;
+margin-left: 2px;
 text-align: center;
-background-color: honeydew;
+background-color: beige;
+
 
 }
 .title h2{
 
-    margin-top: 0px;
+    margin-top: 5px;
 }
 .dates{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 18vw;
     
 
 }
@@ -72,4 +75,16 @@ background-color: honeydew;
 }
 .quartos img{
     width: 18vw
+}
+.nome_dos_hospedes{
+    display: block;
+    flex-direction:column
+}
+
+.nome_dos_hospedes input{
+width: 16vw;
+margin: 0;
+margin-left: -30px;
+
+
 }
