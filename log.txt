@@ -13,3 +13,7 @@ February 6th 2022, 12:42:30 pm - O usuário entrou na URL: /favicon.ico
 February 6th 2022, 12:42:30 pm - O usuário entrou na URL: /
 February 6th 2022, 12:42:30 pm - O usuário entrou na URL: /reservas
 February 6th 2022, 12:42:30 pm - O usuário entrou na URL: /cadastrar
+February 8th 2022, 12:28:41 pm - O usuário entrou na URL: /
+February 8th 2022, 12:28:41 pm - O usuário entrou na URL: /reservas
+February 8th 2022, 12:28:41 pm - O usuário entrou na URL: /suites
+February 8th 2022, 12:28:41 pm - O usuário entrou na URL: /logout
