@@ -17,3 +17,12 @@ February 8th 2022, 12:28:41 pm - O usuário entrou na URL: /
 February 8th 2022, 12:28:41 pm - O usuário entrou na URL: /reservas
 February 8th 2022, 12:28:41 pm - O usuário entrou na URL: /suites
 February 8th 2022, 12:28:41 pm - O usuário entrou na URL: /logout
+February 8th 2022, 3:50:19 pm - O usuário entrou na URL: /cadastrar
+February 8th 2022, 3:50:19 pm - O usuário entrou na URL: /cadastrar
+February 8th 2022, 3:50:19 pm - O usuário entrou na URL: /logar
+February 8th 2022, 3:50:19 pm - O usuário entrou na URL: /logar
+February 8th 2022, 3:50:19 pm - O usuário entrou na URL: /logar
+February 8th 2022, 3:50:19 pm - O usuário entrou na URL: /cadastrar
+February 8th 2022, 3:50:19 pm - O usuário entrou na URL: /cadastrar
+February 8th 2022, 3:50:19 pm - O usuário entrou na URL: /cadastrar
+February 8th 2022, 3:50:19 pm - O usuário entrou na URL: /cadastrar
