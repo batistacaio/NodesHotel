@@ -15,3 +15,9 @@ February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /cadastrar
 February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /
 February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /cadastrar
 February 3rd 2022, 9:47:00 am - O usuário entrou na URL: /cadastrar
+February 8th 2022, 8:55:04 am - O usuário entrou na URL: /
+February 8th 2022, 8:55:04 am - O usuário entrou na URL: /favicon.ico
+February 8th 2022, 8:55:04 am - O usuário entrou na URL: /logar
+February 8th 2022, 8:55:04 am - O usuário entrou na URL: /
+February 8th 2022, 8:55:04 am - O usuário entrou na URL: /logout
+February 8th 2022, 8:55:04 am - O usuário entrou na URL: /
