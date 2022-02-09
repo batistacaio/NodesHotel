@@ -444,3 +444,12 @@ February 9th 2022, 4:02:45 pm - O usuário entrou na URL: /cadastrar
 February 9th 2022, 4:02:45 pm - O usuário entrou na URL: /cadastrar
 February 9th 2022, 4:02:45 pm - O usuário entrou na URL: /cadastrar
 February 9th 2022, 4:02:45 pm - O usuário entrou na URL: /cadastrar
+February 9th 2022, 4:18:53 pm - O usuário entrou na URL: /cadastrar
+February 9th 2022, 4:18:53 pm - O usuário entrou na URL: /cadastrar
+February 9th 2022, 4:18:53 pm - O usuário entrou na URL: /cadastrar
+February 9th 2022, 4:18:53 pm - O usuário entrou na URL: /
+February 9th 2022, 4:18:53 pm - O usuário entrou na URL: /logar
+February 9th 2022, 4:18:53 pm - O usuário entrou na URL: /
+February 9th 2022, 4:18:53 pm - O usuário entrou na URL: /logout
+February 9th 2022, 4:18:53 pm - O usuário entrou na URL: /suites
+February 9th 2022, 4:18:53 pm - O usuário entrou na URL: /reservas
