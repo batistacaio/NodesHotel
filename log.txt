@@ -163,3 +163,5 @@ February 9th 2022, 9:32:53 am - O usuário entrou na URL: /
 February 9th 2022, 9:32:53 am - O usuário entrou na URL: /logout
 February 9th 2022, 9:32:53 am - O usuário entrou na URL: /cadastrar
 February 9th 2022, 9:32:53 am - O usuário entrou na URL: /cadastrar
+February 9th 2022, 9:38:24 am - O usuário entrou na URL: /cadastrar545
+February 9th 2022, 9:38:24 am - O usuário entrou na URL: /
