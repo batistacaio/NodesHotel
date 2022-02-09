@@ -6,6 +6,9 @@ body {
     font-family: courier new;
     font-style: italic;
     font-size: 13px;
+    background-image: url("../images/hotel-macutay.png");background-size: cover;
+
+
 }
 .header{
     position: absolute;
@@ -25,13 +28,15 @@ body {
     padding: 50px;
     background-color: #1E90FF30;
     width: 50vw;
-    height: 115vh;
+    height: 80vh;
     margin-top: 10vh;
     border-style: solid;
     border-radius: 28px;
     border-width: 2px;
     border-color: #000000;
     margin-bottom: 5px; 
+    text-align: center;
+
 }
 #btn1{
     border-style: hidden;
@@ -66,6 +71,7 @@ input {
 input:focus {
     border: 31px;
     background-color: #00FFFF70;
+
 }
 .dropdown:focus {
     border: 31px;
@@ -79,8 +85,7 @@ input:focus {
 
 .botao {
     position: relative;
-    margin-top: 40px;
-    margin-left: 40%;  
+margin: auto;
     width: 30px;
 }
 .botao button {
@@ -99,10 +104,20 @@ button {
 }
 .senha{
 position:relative;
-width: 220px;
-background-color: red;
+width: 420px;
 }
 .senha input {
-width: 5em;
+width: 10px;
 }
+.dicas{
+    display: inline-block;
+    background-color: white;
+    width: 455px;
+    border-radius: 28px;
+    text-align: center;
+    vertical-align: center;
+    height: 80px;
+}
+.botao checkbox {
 
+}
