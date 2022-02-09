@@ -22,7 +22,7 @@ const usuarioController = {
           nome: nome,
           email: email,
           senha: senhaCriptografada
-        }).then(res.render("reservas"))
+        }).then(res.render(reservas))
           .catch((err) => { throw new Error(err) });
       } else {
         return res.render("cadastrar_usuario", { errors: listaDeErros.errors });
@@ -32,10 +32,11 @@ const usuarioController = {
     login: async (req, res) => {
 
       const { user, senha } = req.body;
-      const usuarioLogado = await db.Hospede.findOne({ where: { nome: user } });
+      const senhaCriptografada = bcrypt.hashSync(req.body.senha, 12);
+      const usuarioLogado = await db.Hospede.findOne({ where: { nome: user, senha: senhaCriptografada } });
       if (usuarioLogado != null) {
         req.session.usuario_logado = true;
-        res.send("reservas");
+        res.render(reservas);
       } else { res.send('O nome de usuário ou a senha não correspondem'); }
     }
        
