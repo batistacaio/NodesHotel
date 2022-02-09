@@ -19,24 +19,19 @@ body {
   color: #FFF;
 
 }
-
-
-
 .container {
-    display:inline-block;
+    display:block;
     margin: auto;
     padding: 50px;
     background-color: #1E90FF30;
     width: 50vw;
-    height: 145vh;
+    height: 115vh;
     margin-top: 10vh;
     border-style: solid;
     border-radius: 28px;
     border-width: 2px;
     border-color: #000000;
-    margin-bottom: 15px;
-   
-   
+    margin-bottom: 5px; 
 }
 #btn1{
     border-style: hidden;
@@ -54,10 +49,7 @@ margin: auto;
 font-size: 35px;
 justify-content: center;
 }
-#form2{
 
-    display: flex;
-}
 .dropdown {
     min-width: 350px;
     min-height: 37px;
@@ -69,11 +61,7 @@ input {
     min-height: 30px;
     font-style: italic;
     border-radius: 10px;
-    border-style:solid;
-   
-
- 
-    
+    border-style:solid;  
 }
 input:focus {
     border: 31px;
@@ -83,30 +71,12 @@ input:focus {
     border: 31px;
     background-color: #00FFFF70;
 }
-#number {
-    min-width: 238px;
+
+#nascimento {
+    min-width: 100px;
 }
 
-#ddd {
-    min-width: 20px;
-}
-#uf{
-    min-width: 20px;
-}
-#nascimento {
-    min-width: 210px;
-}
- .login input{
-     min-width: 240px;
- }
-.dicas {
-  line-height: 3px;
-  font-size: 16px;
-  font-weight:bold;
-  color: yellow;
-  z-index: 10;
-    
-}
+
 .botao {
     position: relative;
     margin-top: 40px;
@@ -121,31 +91,18 @@ input:focus {
     font-size: 20px;
     border: none;
 }
-.address #cidade{
-    min-width: 220px;
-}
-.address #UF {
-    min-width: 90px;
-}
+
 button {
     width: 150px;
     height: 160x;
     font-size: 25px;
 }
+.senha{
+position:relative;
+width: 220px;
+background-color: red;
+}
+.senha input {
+width: 5em;
+}
 
-#fotoPerfil {
-    border-style: none;
-    border-radius: 0px;
-}
-.warn {
-    display:flex;
-   background-color: #E0FFFF15;
-    width: 50vw;
-    height: 15vh;
-    border-radius: 22px;
-    color: red;
-    font-size: 16px;
-    vertical-align: center;
-    align-items: center;
-    font-weight: bold;
-}
