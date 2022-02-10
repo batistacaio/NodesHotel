@@ -1,17 +1,60 @@
 <%- include("partials/header.ejs") %>
 
-<div class="container">
+<div class="CONTAINER">
+  
 
+<div class="FORMULARIO">
+    <h3>RESERVAR QUARTO</h3>
 
-<div class="formulario">
-<h3>RESERVAR QUARTO</h3>
 <form action="">
 
-<div class="datas">
-<label for="entrada">Entrada</label><br><br><input type="date" id="entrada" name="entrada" required>
-<label for="saida">Saída</label><br>
-<input type="date" id="saida" name="saida" required>
+<br><br>
+    <section class="dates">
+        <div><p>Entrada<input type="date" id="entrada" required /></p></div>
+        <div><p>Saída<input type="date" id="saída" required /></p></div></section>
+
+    <br><br> 
+
+    <div class="hospedes">
+
+        <label for="">Quantidade de hóspedes</label>
+        <select class='hospedes' name='hospedes' id='hospedes' required>
+        <option value="">----</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option></select>
+   </div>
+
+   <br><br> 
+   
+    <div class="suites">
+        <label for="">Escolha uma suíte &nbsp&nbsp&nbsp</label>
+        <select class='suites' name='suites' id='suites' required>
+        <option value="">----</option>
+        <option value="PLAZA">PLAZA</option>
+        <option value="MASTER">MASTER</option>
+        <option value="ROMA">ROMA</option>
+        <option value="GOLD">GOLD</option>
+        <option value="OMEGA">OMEGA</option>
+        <option value="ROYAL">ROYAL</option>
+        <option value="GARDEN">GARDEN</option>
+        <option value="SILVER">SILVER</option></select>
+   </div>
+
+   <br><br>
+
+  
+<div class="nome_dos_hospedes">
+
+<input type="text" name="hospede1" id="hospede1" placeholder="titular da reserva"><br><br>
+<input type="text" name="hospede2" id="hospede2" placeholder="hospede 2"><br><br>
+<input type="text" name="hospede3" id="hospede3" placeholder="hospede 3"><br><br>
+<input type="text" name="hospede4" id="hospede4" placeholder="hospede 4"><br><br>
+
 </div>
+
+
 
 
 
@@ -41,7 +84,7 @@
 
 
 </form>
-</div>
+</div> <!--FECHA FORMULARIO-->
 
 <div class="quartos">
 <section>
@@ -79,8 +122,8 @@
     <label for="">SUÍTE SILVER R$ 250,00/noite</label>
 
 </section>
-</div>
-</div>
+</div> <!--FECHA QUARTOS-->
+</div> <!--FECHA CONTAINER-->
 
 
 <%- include("partials/footer.ejs") %>

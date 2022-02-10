@@ -1,14 +1,48 @@
-.container{
+.CONTAINER{
     display: flex;
     background-color: #20B2AA;
     height: 70vh;
 
 }
+
+.FORMULARIO{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-radius: 18px;
+    border-style: double;
+    width: 35vw;
+    height: 65vh;
+    padding: 0px;
+    margin-top: 20px;
+    /* align-items: center; */
+    margin-left: 5px;
+    text-align: center;
+    background-color: beige;
+
+    
+}
+.FORMULARIO H3{
+    margin-top: 10px;
+}
+.dates{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    
+
+}
+
+
+
+
 .quartos {
 
     width: 80vw;
     display: flex;
-    margin-top: 25px;
+    margin-top: 35px;
 
 }
 .quartos section{
@@ -24,15 +58,4 @@
 }
 .quartos img{
     width: 18vw
-}
-.formulario{
-    display: block;
-    width: 20vw;
-    background-color:blue;
-    margin: 5px;
-    border-radius: 28px;
-    padding: 10px;
-}
-.datas{
-    display: flex;
 }
