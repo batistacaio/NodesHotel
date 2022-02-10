@@ -43,15 +43,14 @@
            
              </div>
         <% } %>
-        <br><br><br><br>
+        
         <h1>PREENCHA OS DADOS ABAIXO: </h1>
-        <br><br><br><br>
-
+        <br><br><br>
         
             <form action='/cadastrar' method ='POST' id ="form1">
           
                 
-                
+                <div class="dados">
 
             <input type="text" name = "nome" id="nome" placeholder=" Nome Completo">&nbsp&nbsp&nbsp<input type="email" name = "email" id="email" placeholder="  e-mail" ><br><br>
             
@@ -59,19 +58,25 @@
         
             <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço" >&nbsp&nbsp&nbsp<input type="text" name = 'cep' id = "cep" placeholder="CEP" ><br><br>
             <input type="text" name = 'cidade' id = "cidade" placeholder="Cidade" >&nbsp&nbsp&nbsp<input type="text" name = "uf" id = "uf" placeholder="UF" >
-
+        </div>
       
         <br><br><br><br>
 
+
+        <div class="senhas">
    
-            <input type="password" name="senha" id="senha" placeholder="senha" onclick="pass_message()"><br><br>
-            <input type="password" name = "confirmacao" id="confirmacao" placeholder="confirme a senha" onchange="check_passwords()"><br><br><br><br><br><br><br>
-            
-   
+            <input type="password" name="senha" id="senha" placeholder="senha de acesso" onchange="habilitar(), desabilitar()"> <br><br>
+            <input type ="password" name = "confirmacao" id="confirmacao" placeholder="confirme a senha" onchange="habilitar(), desabilitar()"><br>
+
+        </div>
+<div class="msg" id="msg" style="display:none">
+    <h2>SENHAS NÃO CONFEREM!</p>
+</div>
           
         </form>
+        <br><br><br>
         <span class = "botao">
-            <button type="submit" form="form1">CADASTRAR</button><br>
+            <button type="submit" form="form1" id="botao" disabled>CADASTRAR</button><br>
             </span>
 
 </div>
