@@ -1,22 +1,10 @@
 const reserva = [];
-
-const diarias = [
-
-{suite :"PLAZA", diaria: 240.00},
-{suite: "ROMA", diaria: 280.00},
-{suite: "OMEGA", diaria: 200.00},
-{suite: "GARDEN", diaria: 180.00},
-{suite: "MASTER", diaria: 220.00},
-{suite: "GOLD", diaria: 340.00},
-{suite: "ROYAL", diaria: 320.00},
-{suite: "SILVER", diaria: 250.00},
-
-]
-
+const { check, validationResult, body} = require('express-validator');
 const bookingController = {
     reservar: function(req, res, next){
 
-      
+    let  listaDeErros = validationResult(req);
+    if(listaDeErros.isEmpty()){
         const { checkin, checkout, hospedes, suites, hospede1, hospede2, hospede3, hospede4  } = req.body;
 
       //   a minha função de calculo de quant de diarias deve ser feita aqui
@@ -24,7 +12,6 @@ const bookingController = {
 
         reserva.push(
           {
-              
           checkin: checkin,
           checkout: checkout,
           hospedes: hospedes,
@@ -32,16 +19,17 @@ const bookingController = {
           hospede1: hospede1,
           hospede2: hospede2,
           hospede3: hospede3,
-          hospede4: hospede4,
-
-          });
-          
-
+          hospede4: hospede4
+        });
 
           console.log(reserva)
-          res.redirect('/booking')
 
-}
-};
+          }else {
+            return res.render('reservas', {erros: listaDeErros.errors})
+          }
+        }
+      };
 
-module.exports = bookingController;
+
+
+         module.exports = bookingController;
