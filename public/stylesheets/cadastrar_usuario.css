@@ -143,8 +143,11 @@ width: 10px;
    
 }
 .msg{
+
     background-color: white;
     width: 250px;
     height: 30px;
     margin: auto;
+    color: red
+
 }
