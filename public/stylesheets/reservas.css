@@ -26,8 +26,13 @@
     width: 18vw
 }
 .formulario{
+    display: block;
     width: 20vw;
     background-color:blue;
     margin: 5px;
     border-radius: 28px;
+    padding: 10px;
+}
+.datas{
+    display: flex;
 }
