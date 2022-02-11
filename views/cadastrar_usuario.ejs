@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/cadastrar_usuario.css">
     <title>Document</title>
-    <script src="../javascript-front.js"></script>
-
-
 </head>
+
 <body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
 <div class="header">
 
 <a href="/"><h1>Home</h1></a>&nbsp&nbsp&nbsp
@@ -57,7 +58,7 @@
             
             <input type="text" name = "cpf" id="cpf" placeholder=" CPF">&nbsp&nbsp&nbsp<input type="text" name = "telefone" id="telefone" placeholder=" (XX) XXXX-XXXX"><br><br>
         
-            <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço" >&nbsp&nbsp&nbsp<input type="text" name = 'cep' id = "cep" placeholder="CEP" ><br><br>
+            <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço" >&nbsp&nbsp&nbsp<input type="text" name = "cep" id = "cep" placeholder="CEP" ><br><br>
             <input type="text" name = 'cidade' id = "cidade" placeholder="Cidade" >&nbsp&nbsp&nbsp<input type="text" name = "uf" id = "uf" placeholder="UF" >
         </div>
       
@@ -81,6 +82,20 @@
             </span>
 
 </div>
+
+<script src="../javascript-front.js"></script>
+<script type="text/javascript">$("#cep").focusout(function(){
+    $.ajax({
+        url: "https://viacep.com.br/ws/"+$(this).val()+"/json/unicode/",
+        dataType: "json",
+        success: function(resposta){
+            $("#endereco").val(resposta.logradouro);
+            $("#cidade").val(resposta.localidade);
+            $("#uf").val(resposta.uf);
+        }
+    });
+});</script>
+
 </body>
 
 </html>
