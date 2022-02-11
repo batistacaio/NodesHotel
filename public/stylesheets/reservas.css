@@ -1,32 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
-
-
-.container{
+.CONTAINER{
     display: flex;
     background-color: #20B2AA;
     height: 70vh;
-}
-.dados_da_reserva{
-display: flex;
-position: relative;
-flex-direction: column;
-border-radius: 18px;
-border-style: double;
-width: 35vw;
-height: 65vh;
-padding: 0px;
-margin: 2px;
-justify-content:center;
-align-items: center;
-margin-left: 2px;
-text-align: center;
-background-color: beige;
-
 
 }
-.title h2{
 
-    margin-top: 5px;
+.FORMULARIO{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-radius: 18px;
+    border-style: double;
+    width: 35vw;
+    height: 65vh;
+    padding: 0px;
+    margin-top: 20px;
+    /* align-items: center; */
+    margin-left: 5px;
+    text-align: center;
+    background-color: beige;
+
+    
+}
+.FORMULARIO H3{
+    margin-top: 10px;
 }
 .dates{
     display: flex;
@@ -37,29 +34,15 @@ background-color: beige;
     
 
 }
-.dates p{
-
-    width: 68%;
 
 
-}
 
 
-.persons{
-
-    width: 68%;
-
-}
-.botao{
-    display: block;
-    width: 150px;
-    height: 100px;
-
-}
 .quartos {
 
     width: 80vw;
     display: flex;
+    margin-top: 35px;
 
 }
 .quartos section{
@@ -75,16 +58,4 @@ background-color: beige;
 }
 .quartos img{
     width: 18vw
-}
-.nome_dos_hospedes{
-    display: block;
-    flex-direction:column
-}
-
-.nome_dos_hospedes input{
-width: 16vw;
-margin: 0;
-margin-left: -30px;
-
-
 }

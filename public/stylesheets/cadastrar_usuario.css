@@ -6,7 +6,11 @@ body {
     font-family: courier new;
     font-style: italic;
     font-size: 13px;
+    background-image: url("../images/hotel-macutay.png");background-size: cover;
+
+
 }
+
 .header{
     position: absolute;
     display: flex;
@@ -19,24 +23,21 @@ body {
   color: #FFF;
 
 }
-
-
-
 .container {
-    display:inline-block;
+    display:block;
     margin: auto;
     padding: 50px;
     background-color: #1E90FF30;
     width: 50vw;
-    height: 145vh;
+    height: 90vh;
     margin-top: 10vh;
     border-style: solid;
     border-radius: 28px;
     border-width: 2px;
     border-color: #000000;
-    margin-bottom: 15px;
-   
-   
+    margin-bottom: 5px; 
+    text-align: center;
+
 }
 #btn1{
     border-style: hidden;
@@ -54,10 +55,7 @@ margin: auto;
 font-size: 35px;
 justify-content: center;
 }
-#form2{
 
-    display: flex;
-}
 .dropdown {
     min-width: 350px;
     min-height: 37px;
@@ -65,52 +63,30 @@ justify-content: center;
     border-radius: 10px;
 }
 input {
-    min-width: 400px;
-    min-height: 30px;
+    /* min-width: 400px;
+    min-height: 30px; */
     font-style: italic;
     border-radius: 10px;
-    border-style:solid;
-   
-
- 
-    
+    border-style:solid;  
 }
 input:focus {
     border: 31px;
     background-color: #00FFFF70;
+
 }
 .dropdown:focus {
     border: 31px;
     background-color: #00FFFF70;
 }
-#number {
-    min-width: 238px;
+
+#nascimento {
+    min-width: 100px;
 }
 
-#ddd {
-    min-width: 20px;
-}
-#uf{
-    min-width: 20px;
-}
-#nascimento {
-    min-width: 210px;
-}
- .login input{
-     min-width: 240px;
- }
-.dicas {
-  line-height: 3px;
-  font-size: 16px;
-  font-weight:bold;
-  color: yellow;
-  z-index: 10;
-    
-}
+
 .botao {
     position: relative;
-    margin-top: 40px;
-    margin-left: 40%;  
+margin: auto;
     width: 30px;
 }
 .botao button {
@@ -121,31 +97,59 @@ input:focus {
     font-size: 20px;
     border: none;
 }
-.address #cidade{
-    min-width: 220px;
-}
-.address #UF {
-    min-width: 90px;
-}
+
 button {
     width: 150px;
     height: 160x;
     font-size: 25px;
 }
-
-#fotoPerfil {
-    border-style: none;
-    border-radius: 0px;
+.senha{
+position:relative;
+width: 420px;
 }
-.warn {
-    display:flex;
-   background-color: #E0FFFF15;
-    width: 50vw;
-    height: 15vh;
-    border-radius: 22px;
-    color: red;
-    font-size: 16px;
+.senha input {
+width: 10px;
+}
+.dicas{
+    display: inline-block;
+    background-color: white;
+    width: 455px;
+    border-radius: 28px;
+    text-align: center;
     vertical-align: center;
-    align-items: center;
+    height: 80px;
+}
+
+.warn {
+
+    border-radius: 28px;
+    font-size: 16px;
+    text-align: left;
+    height: 80px;
+    width: 30vw;
+    color: red;
     font-weight: bold;
+    font-size: 18px;
+    
+}
+.dados input{
+    width:400px;
+    height: 37px;
+}
+.senhas input{
+    width: 300px;
+    height: 37px;
+}
+.dados{
+    display: block;
+   
+}
+.msg{
+
+    background-color: white;
+    width: 250px;
+    height: 30px;
+    margin: auto;
+    color: red
+
 }
