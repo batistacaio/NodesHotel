@@ -1,4 +1,4 @@
-const usuarios = [];
+const db = require("../database/models");
 const bcrypt = require('bcryptjs');
 const { check, validationResult, body } = require('express-validator');
 
@@ -9,35 +9,36 @@ const usuarioController = {
     showLogin: function(req, res, next){
       res.render('login_usuario')
     },
-    cadastrar: function(req, res, next){
+    cadastrar: async (req, res) => {
+
+      const senhaCriptografada = bcrypt.hashSync(req.body.senha, 12);
+
       let listaDeErros = validationResult(req);
 
-      if(listaDeErros.isEmpty()){
+      if (listaDeErros.isEmpty()) {
 
-        const { nome, email, senha  } = req.body;
-        usuarios.push(
-          {
-
+        const { nome, email, senha } = req.body;
+        await db.Hospede.create({
           nome: nome,
           email: email,
-          senha: bcrypt.hashSync(senha,12)
-  
-          });
-          res.render('reservas')
-          console.log(usuarios)
-      }else {
-        return res.render("cadastrar_usuario", {errors: listaDeErros.errors})
+          senha: senhaCriptografada
+        }).then(res.render(reservas))
+          .catch((err) => { throw new Error(err) });
+      } else {
+        return res.render("cadastrar_usuario", { errors: listaDeErros.errors });
       }
     },
-    login: function(req, res, next){
 
-      const { email, senha } = req.body;
-      const usuarioLogado = usuarios.find((usuario) => usuario.email == email && bcrypt.compareSync(senha, usuario.senha));
-      if(usuarioLogado != null){
-        req.session.usuario_logado = true
-          res.send("usuario logado");
-      }else{ res.send('O nome de usuário ou a senha não correspondem')}
-      }
+    login: async (req, res) => {
+
+      const { user, senha } = req.body;
+      const senhaCriptografada = bcrypt.hashSync(req.body.senha, 12);
+      const usuarioLogado = await db.Hospede.findOne({ where: { nome: user, senha: senhaCriptografada } });
+      if (usuarioLogado != null) {
+        req.session.usuario_logado = true;
+        res.render(reservas);
+      } else { res.send('O nome de usuário ou a senha não correspondem'); }
+    }
        
   };
   
