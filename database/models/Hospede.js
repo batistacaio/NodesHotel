@@ -17,6 +17,30 @@ module.exports = (sequelize, DataTypes) => {
         senha: {
             type: DataTypes.STRING(100),
             allowNull: false
+        },
+        cpf: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        telefone: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        endereco: {
+            type: DataTypes.STRING(200),
+            allowNull: false
+        },
+        cep: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
+        cidade: {
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
+        uf: {
+            type: DataTypes.STRING(2),
+            allowNull: false
         }
     },
     {

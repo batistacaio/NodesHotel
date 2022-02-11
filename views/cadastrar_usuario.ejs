@@ -84,14 +84,15 @@
 </div>
 
 <script src="../javascript-front.js"></script>
-<script type="text/javascript">$("#cep").focusout(function(){
-    $.ajax({
-        url: "https://viacep.com.br/ws/"+$(this).val()+"/json/unicode/",
-        dataType: "json",
-        success: function(resposta){
-            $("#endereco").val(resposta.logradouro);
-            $("#cidade").val(resposta.localidade);
-            $("#uf").val(resposta.uf);
+<script type="text/javascript">
+    $("#cep").focusout(function(){
+        $.ajax({
+            url: "https://viacep.com.br/ws/"+$(this).val()+"/json/unicode/",
+            dataType: "json",
+            success: function(resposta){
+                $("#endereco").val(resposta.logradouro);
+                $("#cidade").val(resposta.localidade);
+                $("#uf").val(resposta.uf);
         }
     });
 });</script>

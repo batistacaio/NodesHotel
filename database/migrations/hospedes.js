@@ -18,6 +18,30 @@ module.exports = {
             senha: {
                 type: Sequelize.STRING(100),
                 allowNull: false
+            },
+            cpf: {
+                type: Sequelize.INTEGER,
+                allowNull: false,
+            },
+            telefone: {
+                type: Sequelize.INTEGER,
+                allowNull: false
+            },
+            endereco: {
+                type: Sequelize.STRING(200),
+                allowNull: false
+            },
+            cep: {
+                type: Sequelize.INTEGER,
+                allowNull: false
+            },
+            cidade: {
+                type: Sequelize.STRING(100),
+                allowNull: false
+            },
+            uf: {
+                type: Sequelize.STRING(2),
+                allowNull: false
             } 
         })
     },
