@@ -59,3 +59,16 @@
 .quartos img{
     width: 18vw
 }
+.nomes{
+    display: block;
+    width: 18vw;
+    height: 20vh;
+    margin: auto;
+
+}
+.nomes input{
+    width: 17vw;
+    height: 2.5vh;
+}
+.botao {
+    margin-bottom: 20px;
