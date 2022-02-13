@@ -29,7 +29,7 @@ var partida = new Date(saida);
 
 var timeDiff = Math.abs(chegada.getTime() - partida.getTime());//converter datas em numeros absolutos e subtrair//
 var diffDays = Math.ceil(timeDiff / (1000 *3600*24));//pegar o resultado da subtração e transformar em dias//
-var valor = tabela[2].diaria;
+var valor_diaria = tabela[2].diaria;
 
 var valor_reserva = valor * diffDays
 
