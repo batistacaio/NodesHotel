@@ -48,3 +48,13 @@ February 13th 2022, 8:54:08 am - O usuário entrou na URL: /reservas
 February 13th 2022, 8:54:08 am - O usuário entrou na URL: /reservas
 February 13th 2022, 8:54:08 am - O usuário entrou na URL: /reservas
 February 13th 2022, 8:54:08 am - O usuário entrou na URL: /reservas
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /reservas
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /suites
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /contato
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /cadastrar
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /logar
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /
+February 13th 2022, 10:05:48 am - O usuário entrou na URL: /logout

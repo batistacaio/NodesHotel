@@ -12,8 +12,8 @@ const bookingController = {
 
         reserva.push(
           {
-          checkin: checkin,
-          checkout: checkout,
+          checkin: entrada,
+          checkout: saida,
           hospedes: hospedes,
           suites: suites,
           hospede1: hospede1,
