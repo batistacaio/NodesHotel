@@ -18,9 +18,7 @@
     /* align-items: center; */
     margin-left: 5px;
     text-align: center;
-    background-color: beige;
-
-    
+    background-color: beige;   
 }
 .FORMULARIO H3{
     margin-top: 10px;
@@ -31,12 +29,7 @@
     justify-content: center;
     align-items: center;
     width: 18vw;
-    
-
 }
-
-
-
 
 .quartos {
 
@@ -45,11 +38,10 @@
     margin-top: 35px;
 
 }
-.quartos section{
+.quartos section {
     width: 20vw;
     text-align: center;
     display:block;
-    vertical-align: center;
     align-items: center;
     margin: auto;
     font-weight: bold;
@@ -72,3 +64,4 @@
 }
 .botao {
     margin-bottom: 20px;
+}

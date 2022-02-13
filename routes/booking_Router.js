@@ -1,8 +1,14 @@
 var express = require('express');
-var router = express.router;
+const { check, validationResult, body } = require('express-validator');
+var router = express.Router();
 const bookingController = require('../controllers/bookingController');
 
-router.post('/', bookingController.reservar);
+router.post('/',[ 
+check('entrada').notEmpty(),
+check('saida').notEmpty,
+check(' suites').notEmpty,
+check('hospede1').notEmpty],
+bookingController.reservar);
 
 
 
