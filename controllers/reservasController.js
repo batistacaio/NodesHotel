@@ -6,11 +6,11 @@ const reservasController = {
       }else{
     
       res.render('reservas')
-    }
+      }
   }
 };
 
-  module.exports = reservasController;
+module.exports = reservasController;
 
 
 

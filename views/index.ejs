@@ -1,10 +1,9 @@
 <%- include("partials/header.ejs") %>
 
-<body>
-  <div class="greetings">
+<div class="container">
+  <div class="blockquote text-center m-5">
     <p>Todos os nossos tipos de quarto incluem café da manhã de cortesia</p>
   </div>
-
   <div class="block">
     <div class="presentation">
       <p>
@@ -24,8 +23,8 @@
     </div>
   </div>
 
-  <div class="rooms">
-    <div class="card">
+  <div class="mt-5 mb-2 row card-group">
+    <div class="col-md-6">
       <div class="text-card">
         <h1>Luxury redefined</h1>
         <p>
@@ -33,48 +32,62 @@
           leisure. Take your mind off the day-to-day of home life and find a
           private paradise for yourself.
         </p>
-        <button>Explore</button>
+        <button class="btn-dark p-2 ml-4 mb-5 rounded" style="background-color: #BF8756; border: none;">Explore</button>
       </div>
-      <img class="foto1" src="../images/photo_1.jpg" alt="1" />
     </div>
-    <div class="card">
-      <div class="text-card">
-        <h1>Luxury redefined</h1>
-        <p>
-          Our rooms are designed to transport you into an environment made for
-          leisure. Take your mind off the day-to-day of home life and find a
-          private paradise for yourself.
-        </p>
-        <button>Explore</button>
-      </div>
-      <img class="foto1" src="../images/photo_2.jpg" alt="1" />
-    </div>
-    <div class="card">
-      <div class="text-card">
-        <h1>Luxury redefined</h1>
-        <p>
-          Our rooms are designed to transport you into an environment made for
-          leisure. Take your mind off the day-to-day of home life and find a
-          private paradise for yourself.
-        </p>
-        <button>Explore</button>
-      </div>
-      <img class="foto1" src="../images/photo_3.jpg" alt="1" />
-    </div>
-    <div class="card">
-      <div class="text-card">
-        <h1>Luxury redefined</h1>
-        <p>
-          Our rooms are designed to transport you into an environment made for
-          leisure. Take your mind off the day-to-day of home life and find a
-          private paradise for yourself.
-        </p>
-        <button>Explore</button>
-      </div>
-      <img class="foto1" src="../images/photo_4.jpg" alt="1" />
+    <div class="col-md-6">
+      <img class="img-fluid" src="./images/suite.jpg" alt="1">
     </div>
   </div>
-  <div class="depoimentos">
+  <div class="mt-5 mb-2 row card-group">
+    <div class="col-md-6">
+      <div class="text-card">
+        <h1>Luxury redefined</h1>
+        <p>
+          Our rooms are designed to transport you into an environment made for
+          leisure. Take your mind off the day-to-day of home life and find a
+          private paradise for yourself.
+        </p>
+        <button class="btn-dark p-2 ml-4 mb-5 rounded" style="background-color: #BF8756; border: none;">Explore</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="./images/suite1.jpg" alt="1">
+    </div>
+  </div>    
+  <div class="mt-5 mb-2 row card-group">
+    <div class="col-md-6">
+      <div class="text-card">
+        <h1>Luxury redefined</h1>
+        <p>
+          Our rooms are designed to transport you into an environment made for
+          leisure. Take your mind off the day-to-day of home life and find a
+          private paradise for yourself.
+        </p>
+        <button class="btn-dark p-2 ml-4 mb-5 rounded" style="background-color: #BF8756; border: none;">Explore</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="./images/suite2.jpg" alt="1">
+    </div>
+  </div>    
+  <div class="mt-5 mb-2 row card-group">
+    <div class="col-md-6">
+      <div class="text-card">
+        <h1>Luxury redefined</h1>
+        <p>
+          Our rooms are designed to transport you into an environment made for
+          leisure. Take your mind off the day-to-day of home life and find a
+          private paradise for yourself.
+        </p>
+        <button class="btn-dark p-2 ml-4 mb-5 rounded" style="background-color: #BF8756; border: none;">Explore</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="img-fluid" src="./images/suite3.jpg" alt="1">
+    </div>
+  </div>    
+   <div class="depoimentos">
     <h3>
       Depoimento
     </h3>
@@ -86,6 +99,9 @@
       <button>></button>
     </div>
   </div>
+
+</div>
+
 
   <%- include("partials/footer.ejs") %>
 </body>
