@@ -620,3 +620,14 @@ February 14th 2022, 3:05:28 pm - O usuário entrou na URL: /reservas
 February 14th 2022, 3:05:28 pm - O usuário entrou na URL: /booking
 February 14th 2022, 3:05:28 pm - O usuário entrou na URL: /reservas
 February 14th 2022, 3:05:28 pm - O usuário entrou na URL: /booking
+February 14th 2022, 3:11:26 pm - O usuário entrou na URL: /reservas
+February 14th 2022, 3:11:26 pm - O usuário entrou na URL: /booking
+February 14th 2022, 3:14:23 pm - O usuário entrou na URL: /reservas
+February 14th 2022, 3:14:23 pm - O usuário entrou na URL: /booking
+February 14th 2022, 3:14:51 pm - O usuário entrou na URL: /booking
+February 14th 2022, 3:14:51 pm - O usuário entrou na URL: /
+February 14th 2022, 3:14:51 pm - O usuário entrou na URL: /reservas
+February 14th 2022, 3:14:51 pm - O usuário entrou na URL: /booking
+February 14th 2022, 3:15:22 pm - O usuário entrou na URL: /
+February 14th 2022, 3:15:22 pm - O usuário entrou na URL: /reservas
+February 14th 2022, 3:15:22 pm - O usuário entrou na URL: /booking
