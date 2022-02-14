@@ -1,8 +1,11 @@
 var express = require('express');
-var router = express.router;
+const { check, validationResult, body } = require('express-validator');
+var router = express.Router();
 const bookingController = require('../controllers/bookingController');
 
-router.post('/', bookingController.reservar);
+router.get('/:id', bookingController.showResumo);
+
+router.post('/',bookingController.reservar);
 
 
 

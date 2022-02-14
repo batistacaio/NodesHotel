@@ -6,12 +6,12 @@
 <div class="FORMULARIO">
     <h3>RESERVAR QUARTO</h3>
 
-<form action="">
+<form action="/booking", method="POST" id="booking">
 
 <br><br>
     <section class="dates">
-        <div><p>Entrada<input type="date" id="entrada" required /></p></div>
-        <div><p>Saída<input type="date" id="saída" required /></p></div></section>
+        <div><p>Entrada<input type="date" id="entrada" name="entrada" required /></p></div>
+        <div><p>Saída<input type="date" id="saída" name="saida" required /></p></div></section>
 
     <br><br> 
 
@@ -45,7 +45,7 @@
    <br><br>
 
   
-<div class="nome_dos_hospedes">
+<div class="nomes">
 
 <input value ="<%= locals.session.usuario.nome %>" readonly type="text" name="hospede1" id="hospede1" placeholder="titular da reserva"><br><br>
 <input type="text" name="hospede2" id="hospede2" placeholder="hospede 2"><br><br>
@@ -54,37 +54,17 @@
 
 </div>
 
+<section class="botao">
+  <br>
+<button type="submit" form="booking">RESERVAR QUARTO</button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</section>
 
 </form>
 </div> <!--FECHA FORMULARIO-->
+
+
+
 
 <div class="quartos">
 <section>

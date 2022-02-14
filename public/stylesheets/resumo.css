@@ -1,0 +1,32 @@
+.tela{
+
+    display: flex;
+    background-color: #20B2AA;
+    height: 75vh;
+
+}
+.tabela{
+   
+    background-color: #20B2AA;
+    height: 60vh;
+    margin: auto;
+    width: 30vw;
+    margin-top: 50px;
+ 
+
+}
+caption{
+    font-size: 20px;
+    font-weight: bold;
+}
+td{
+    width: 380px;
+    text-align: center;
+}
+th{
+    width: 200px;
+    text-align: left;
+}
+tr{
+    background-color: #E6E6FA;
+}
