@@ -17,7 +17,10 @@ const precos = [
 const bookingController = {
 
   showResumo: function(req,res,next){
-    res.render('resumo')
+    var x = req.params.id
+    //buscar id de reserva no banco de dados//
+    const rese = reserva[0]
+    res.render('resumo',{rese})
   },
 
   reservar: function(req, res, next){
@@ -49,10 +52,11 @@ var valor_total = (objeto.diaria * diffDays).toLocaleString('pt-br', {style: 'cu
           hospede2: hospede2,
           hospede3: hospede3,
           hospede4: hospede4,
+         
 
         });
 
-     res.render('resumo');
+     res.redirect('/booking/1');
      console.log(reserva, valor_total);
   
 
