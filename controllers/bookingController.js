@@ -51,7 +51,7 @@ var valor_total = (objeto.diaria * diffDays).toLocaleString('pt-br', {style: 'cu
 
         });
 
-     res.render('resumo');
+     res.render('resumo',{precos});
      console.log(valor_total);
   
 

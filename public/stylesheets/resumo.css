@@ -2,16 +2,17 @@
 
     display: flex;
     background-color: #20B2AA;
-    height: 70vh;
+    height: 75vh;
 
 }
 .tabela{
    
     background-color: #20B2AA;
-    height: 50vh;
+    height: 60vh;
     margin: auto;
     width: 30vw;
-    margin-top: 65px;
+    margin-top: 50px;
+ 
 
 }
 caption{
@@ -20,8 +21,12 @@ caption{
 }
 td{
     width: 380px;
+    text-align: center;
 }
 th{
     width: 200px;
     text-align: left;
+}
+tr{
+    background-color: #E6E6FA;
 }
