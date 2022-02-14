@@ -1,5 +1,4 @@
-
-const reserva = [];
+const db = require("../database/models");
 const precos = [
   {suite :"PLAZA", diaria: 240.00},
   {suite: "ROMA", diaria: 280.00},
@@ -9,18 +8,16 @@ const precos = [
   {suite: "GOLD", diaria: 340.00},
   {suite: "ROYAL", diaria: 320.00},
   {suite: "SILVER", diaria: 250.00}
-  ];
+];
 
 const bookingController = {
 
   showResumo: function(req,res,next){
     var x = req.params.id
-    //buscar id de reserva no banco de dados//
-    const rese = reserva[0]
-    res.render('resumo',{rese})
+    res.render('resumo')
   },
 
-  reservar: function(req, res, next){
+  reservar: async function(req, res, next){
     const { entrada, saida, hospedes, suites, hospede1, hospede2, hospede3, hospede4  } = req.body;
 
     var chegada = new Date(entrada);
@@ -40,25 +37,18 @@ var valor_total = (objeto.diaria * diffDays).toLocaleString('pt-br', {style: 'cu
 
 
 
-        reserva.push(
+         await db.Reserva.create(
           {
-          entrada: entrada,
-          saida: saida,
-          hospedes: hospedes,
-          suites: suites,
-          hospede1: hospede1,
-          hospede2: hospede2,
-          hospede3: hospede3,
-          hospede4: hospede4,
-         
-
-        });
-
-     res.redirect('/booking/1');
-     console.log(reserva, valor_total);
-  
-
-        }
+          data_entrada: entrada,
+          data_saida: saida,
+          total_hospedes: hospedes,
+          suite_name: suites,
+          hospede1_titular: hospede1,
+          hospede_2: hospede2,
+          hospede_3: hospede3,
+          hospede_4: hospede4,
+        }).then(res.render("resumo",{valor_total}))
+        },
 };
 
 module.exports = bookingController;

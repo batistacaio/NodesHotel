@@ -28,15 +28,15 @@ module.exports = (sequelize, DataTypes) => {
         },
         hospede_2: {
             type: DataTypes.STRING(100),
-            allowNull: false
+            allowNull: true
         },
         hospede_3: {
             type: DataTypes.STRING(100),
-            allowNull: false
+            allowNull: true
         },
         hospede_4: {
             type: DataTypes.STRING(100),
-            allowNull: false
+            allowNull: true
         }
     },
     {   
