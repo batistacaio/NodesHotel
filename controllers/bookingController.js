@@ -1,6 +1,6 @@
 
 const reserva = [];
-const tabela = [
+const precos = [
 
   {suite :"PLAZA", diaria: 240.00},
   {suite: "ROMA", diaria: 280.00},
@@ -26,12 +26,17 @@ const bookingController = {
 
 var chegada = new Date(entrada);
 var partida = new Date(saida);
-
 var timeDiff = Math.abs(chegada.getTime() - partida.getTime());//converter datas em numeros absolutos e subtrair//
 var diffDays = Math.ceil(timeDiff / (1000 *3600*24));//pegar o resultado da subtração e transformar em dias//
-var valor_diaria = tabela[2].diaria;
+var valor_diaria = null;
+valor_diaria = precos.find(function(preco){
+if(preco.suite == suites){
+  return preco;
+};
+});
 
-var valor_reserva = valor * diffDays
+
+
 
         reserva.push(
           {
@@ -47,7 +52,7 @@ var valor_reserva = valor * diffDays
         });
 
      res.send(reserva);
-     console.log(reserva);
+     console.log(valor_diaria);
   
 
         }
