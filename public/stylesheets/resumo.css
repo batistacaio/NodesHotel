@@ -11,6 +11,17 @@
     height: 50vh;
     margin: auto;
     width: 30vw;
-    margin-top: 85px;
+    margin-top: 65px;
 
+}
+caption{
+    font-size: 20px;
+    font-weight: bold;
+}
+td{
+    width: 380px;
+}
+th{
+    width: 200px;
+    text-align: left;
 }
