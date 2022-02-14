@@ -34,6 +34,7 @@ if(preco.suite == suites){
   return preco;
 };
 });
+var valor_total = null
 var valor_total = (objeto.diaria * diffDays).toLocaleString('pt-br', {style: 'currency', currency: "BRL"});    //>>>>>Multimplicando o valor da diaria escolhida pela quantidade de dias e formatando para moeda nacional //
 
 
@@ -51,8 +52,8 @@ var valor_total = (objeto.diaria * diffDays).toLocaleString('pt-br', {style: 'cu
 
         });
 
-     res.render('resumo',{precos});
-     console.log(valor_total);
+     res.render('resumo');
+     console.log(reserva, valor_total);
   
 
         }
