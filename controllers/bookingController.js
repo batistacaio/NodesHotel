@@ -28,16 +28,13 @@ var chegada = new Date(entrada);
 var partida = new Date(saida);
 var timeDiff = Math.abs(chegada.getTime() - partida.getTime());//converter datas em numeros absolutos e subtrair//
 var diffDays = Math.ceil(timeDiff / (1000 *3600*24));//pegar o resultado da subtração e transformar em dias//
-var valor_diaria = null;
-valor_diaria = precos.find(function(preco){
+var objeto = null;
+objeto = precos.find(function(preco){
 if(preco.suite == suites){
   return preco;
 };
 });
-
-
-
-
+var valor_diarias = objeto.diaria * diffDays
         reserva.push(
           {
           entrada: entrada,
@@ -52,7 +49,7 @@ if(preco.suite == suites){
         });
 
      res.send(reserva);
-     console.log(valor_diaria);
+     console.log(valor_diarias);
   
 
         }
