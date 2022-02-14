@@ -1,0 +1,16 @@
+.tela{
+
+    display: flex;
+    background-color: #20B2AA;
+    height: 70vh;
+
+}
+.tabela{
+   
+    background-color: #20B2AA;
+    height: 50vh;
+    margin: auto;
+    width: 30vw;
+    margin-top: 85px;
+
+}

@@ -51,7 +51,7 @@ var valor_total = (objeto.diaria * diffDays).toLocaleString('pt-br', {style: 'cu
 
         });
 
-     res.send(reserva);
+     res.render('resumo');
      console.log(valor_total);
   
 
