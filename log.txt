@@ -968,3 +968,23 @@ February 14th 2022, 7:21:24 pm - O usuário entrou na URL: /booking/1
 February 14th 2022, 7:21:24 pm - O usuário entrou na URL: /booking/stylesheets/header.css
 February 14th 2022, 7:21:24 pm - O usuário entrou na URL: /booking/stylesheets/footer.css
 >>>>>>> c9713a88f8b8e121d538d2e5fef6272b8a5870b6
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /logar
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /logar
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /reservas
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /images/photo_1.jpg
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /images/photo_2.jpg
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /images/photo_3.jpg
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /images/photo_4.jpg
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /images/photo_5.jpg
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /images/photo_6.jpg
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /images/photo_7.jpg
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /images/photo_8.jpg
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /booking
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /booking/1
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /booking/stylesheets/header.css
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /booking/stylesheets/footer.css
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /booking/stylesheets/header.css
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /booking/stylesheets/footer.css
+February 14th 2022, 8:21:05 pm - O usuário entrou na URL: /
