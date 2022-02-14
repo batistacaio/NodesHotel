@@ -31,6 +31,10 @@ app.use(session({
   saveUninitialized: true,
 }));
 app.use(logMiddleware);
+app.use(function(req, res, next) {
+  res.locals.session = req.session;
+  next();
+});
 
 app.use('/', indexRouter);
 app.use("/contato", contatoRouter);
@@ -38,7 +42,7 @@ app.use("/suites", suitesRouter);
 app.use("/reservas", reservasRouter);
 app.use("/cadastrar", cadastrar_Router);
 app.use('/logar', login_Router);
-app.use('/logout', function(req, res){req.session.destroy(); res.send("usuario deslogado")});
+app.use('/logout', function(req, res){req.session.destroy(); res.redirect("/")});
 
 
 

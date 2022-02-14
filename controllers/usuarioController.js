@@ -36,16 +36,24 @@ const usuarioController = {
     },
 
     login: async (req, res) => {
-
       const { email, senha } = req.body;
-      const senhaCriptografada = bcrypt.hashSync(req.body.senha, 12);
-      const usuarioLogado = await db.Hospede.findOne({ where: { email: email, senha: senhaCriptografada } });
-      if (usuarioLogado != null) {
-        req.session.usuario_logado = true;
-        res.render("reservas");
-      } else { res.send('O nome de usuário ou a senha não correspondem'); }
+      const usuario = await db.Hospede.findOne({ where: { email: email } });
+      if (usuario) {
+        const senhaCorreta = bcrypt.compareSync(senha, usuario.senha);
+        if (senhaCorreta) {
+          req.session.usuario = usuario;
+          res.redirect('/reservas');
+        } else {
+          res.render('login_usuario', {
+            erro: 'Senha incorreta'
+          });
+        }
+      } else {
+        res.render('login_usuario', {
+          erro: 'Usuário não encontrado'
+        });
+      };
     }
-       
   };
   
   module.exports = usuarioController;
