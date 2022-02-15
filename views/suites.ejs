@@ -1,73 +1,71 @@
 <%- include("partials/header.ejs") %>
 
 <main>
-<section class="header">
-    <h2>Suítes</h2>
-</section>
-
-<section class= "detalhes">
-
-    <div class= "parag">
-        <p>Lorem. ipsum dolor sit amet consectetur adipisicing elit. Porro perferendis quis quasi enim, iure blanditiis officiis, quidem assumenda fuga non natus in quibusdam corrupti qui voluptate totam exercitationem fugiat architecto.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro perferendis quis quasi enim, iure blanditiis officiis, quidem assumenda fuga non natus in quibusdam corrupti qui voluptate totam exercitationem fugiat architecto.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro perferendis quis quasi enim, iure blanditiis officiis, quidem assumenda fuga non natus in quibusdam corrupti qui voluptate totam exercitationem fugiat architecto.</p>
-        
-        
+    <div class="container py-5">
+        <h2 class="display-4">Suítes</h2>
+        <section class= "detalhes">
+            <p>Lorem. ipsum dolor sit amet consectetur adipisicing elit. Porro perferendis quis quasi enim, iure blanditiis officiis, quidem assumenda fuga non natus in quibusdam corrupti qui voluptate totam exercitationem fugiat architecto.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro perferendis quis quasi enim, iure blanditiis officiis, quidem assumenda fuga non natus in quibusdam corrupti qui voluptate totam exercitationem fugiat architecto.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro perferendis quis quasi enim, iure blanditiis officiis, quidem assumenda fuga non natus in quibusdam corrupti qui voluptate totam exercitationem fugiat architecto.</p>
+            Todas as nossas suítes contam com:
+            <div class="row">
+                <div class="col-md-3 list-group py-1"><img src="../images/tv.png" alt="" class="icon"> Televisão à cabo</div>
+                <div class="col-md-3 list-group py-1""><img src="../images/frozen.png" alt="" class="icon">Ar-condicionado</div>
+                <div class="col-md-3 list-group py-1""><img src="../images/warm.png" alt="" class="icon d-inline">Aquecedores</div>
+                <div class="col-md-3 list-group py-1""><img src="../images/frigobar.png" alt="" class="icon">Frigobar</div>
+                <div class="col-md-3 list-group py-1""><img src="../images/cofre.png" alt="" class="icon">Cofre em todas suítes</div>
+                <div class="col-md-3 list-group py-1""><img src="../images/wi-fi.png" alt="" class="icon">Wi-Fi em todos os ambientes</div>
+                <div class="col-md-3 list-group py-1""><img src="../images/garcon.png" alt="" class="icon">Garçom com atendimento exclusivo</div>
+            </ul>
+        </section>
+        <div id="carousel-beneficios" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-beneficios" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
+                <button type="button" data-bs-target="#carousel-beneficios" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                <button type="button" data-bs-target="#carousel-beneficios" data-bs-slide-to="2" aria-label="Slide 3">3</button>
+                <button type="button" data-bs-target="#carousel-beneficios" data-bs-slide-to="3" aria-label="Slide 3">4</button>
+                <button type="button" data-bs-target="#carousel-beneficios" data-bs-slide-to="4" aria-label="Slide 3">5</button>
+                <button type="button" data-bs-target="#carousel-beneficios" data-bs-slide-to="5" aria-label="Slide 3">6</button>
+                <button type="button" data-bs-target="#carousel-beneficios" data-bs-slide-to="6" aria-label="Slide 3">7</button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/suite1.jpg" class="d-block w-75 imgheigth" alt="Suite 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/suite2.jpg" class="d-block w-75 imgheigth" alt="Suite 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/suite3.jpg" class="d-block w-75 imgheigth" alt="Suite 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/suite4.jpg" class="d-block w-75 imgheigth" alt="Suite 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/suite5.jpg" class="d-block w-75 imgheigth" alt="Suite 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/suite6.jpg" class="d-block w-75 imgheigth" alt="Suite 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/suite7.jpg" class="d-block w-75 imgheigth" alt="Suite 7">
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-4">
+            <h5>Além de todo o conforto em nossas suítes, oferecemos também uma área de lazer surpreendente!</h5>
+        </div>
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col-md-6"><img src="./images/jardim.png" alt="jardim" class="w-100 imgtub"></div>
+                <div class="col-md-6"><img src="./images/piscina.png" alt="jardim" class="w-100 imgtub"></div>
+                <div class="col-md-6"><img src="./images/restaurante.png" alt="jardim" class="w-100 imgtub"></div>
+                <div class="col-md-6"><img src="./images/piscina1.png" alt="jardim" class="w-100 imgtub"></div>
+                <div class="col-md-6"><img src="./images/sala.jpg" alt="jardim" class="w-100 imgtub"></div>
+                <div class="col-md-6"><img src="./images/spa.png" alt="jardim" class="w-100 imgtub"></div>
+            </div>
+        </div>
     </div>
-   
-<div class="rooms"><img src="../images/rooms.png" alt=""></div>
+</main>
 
-
-<div class="devices">
-
-<div class="tv">
-<img src="../images/tv.png" alt="">
-<h5>TV Tela Plana</h4>
-
-</div>
-<div class="ar">
-    <img src="../images/frozen.png" alt="">
-<h5>Ar Condicionado</h5>
-</div>
-
-<div class="frigobar">
-    <img src="../images/frigobar.png" alt="">
-<h5>Frigobar</h5>
-</div>
-
-<div class="cofre">
-    <img src="../images/cofre.png" alt="">
-<h5>Cofre do hotel</h5>
-</div>
-
-<div class="wi-fi">
-    <img src="../images/wi-fi.png" alt="">
-<h5>Wi-Fi</h5>
-</div>
-<div class="servico">
-    <img src="../images/garcon.png" alt="">
-<h5>Serviço de quarto</h5>
-</div>
-<div class="aquecimento">
-    <img src="../images/warm.png" alt="">
-<h5>Aquecimento</h5>
-</div>
-</div>
-</section>
-
-<section class="fotos">
-
-    <a href="reservas"><img src="../images/photo_1.jpg" alt="" id='S001'></a>
-    <a href="reservas"><img src="../images/photo_2.jpg" alt="" id='S002'></a>
-    <a href="reservas"><img src="../images/photo_3.jpg" alt="" id='S003'></a>
-    <a href="reservas"><img src="../images/photo_4.jpg" alt="" id='S004'></a>
-    <a href="reservas"><img src="../images/photo_5.jpg" alt="" id='S005'></a>
-    <a href="reservas"><img src="../images/photo_6.jpg" alt="" id='S006'></a>
-    <a href="reservas"><img src="../images/photo_7.jpg" alt="" id='S007'></a>
-    <a href="reservas"><img src="../images/photo_8.jpg" alt="" id='S008'></a>
-
-
-
-</section>
-    </main>
 <%- include("partials/footer.ejs") %>

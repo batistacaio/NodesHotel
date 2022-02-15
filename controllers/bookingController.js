@@ -21,7 +21,9 @@ const bookingController = {
         id: {[Op.eq]: codReserva}
       }
     })
+    
     res.render('resumo', { hospede1_titular: reserva })
+    console.log(reserva)
   },
 
   reservar: async function(req, res, next){
