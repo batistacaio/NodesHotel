@@ -44,7 +44,7 @@ app.use("/reservas", reservasRouter);
 app.use("/cadastrar", cadastrar_Router);
 app.use('/logar', login_Router);
 app.use('/booking', booking_Router);
-app.use('/logout', function(req, res){req.session.destroy(); res.send("usuario deslogado")});
+app.use('/logout', function(req, res){req.session.destroy(); res.redirect("/");});
 
 
 

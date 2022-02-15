@@ -15,15 +15,12 @@ const precos = [
 const bookingController = {
 
   showResumo: async function(req,res,next){
-    var codReserva = req.params.id
+    const {id} = req.params;
     const reserva = await db.Reserva.findOne({
-      where: {
-        id: {[Op.eq]: codReserva}
-      }
+      where: {id: id},
     })
-    
-    res.render('resumo', { hospede1_titular: reserva })
-    console.log(reserva)
+    .then(res.render("resumo", {reserva}))
+    .catch(err => console.log(err));
   },
 
   reservar: async function(req, res, next){
@@ -31,9 +28,9 @@ const bookingController = {
 
     var chegada = new Date(entrada);
     var partida = new Date(saida);
-    var timeDiff = Math.abs(chegada.getTime() - partida.getTime());     //>>>>>>converter datas em numeros absolutos e subtrair os valores//
-    var diffDays = Math.ceil(timeDiff / (1000 *3600*24));      //>>>>>>pegar o resultado da subtração e transformar em dias//
-    var objeto = null;      //>>>>>>identificar qual o valor da diaria de acordo com a suite escolhida na reserva usando o método FIND//
+    var timeDiff = Math.abs(chegada.getTime() - partida.getTime()); 
+    var diffDays = Math.ceil(timeDiff / (1000 *3600*24));   
+    var objeto = null;   
     objeto = precos.find(function(preco){
 
       if(preco.suite == suites){
@@ -56,7 +53,9 @@ var valor_total = (objeto.diaria * diffDays).toLocaleString('pt-br', {style: 'cu
           hospede_2: hospede2,
           hospede_3: hospede3,
           hospede_4: hospede4,
-        }).then(res.render("resumo",{valor_total}))
+        })
+        .then(res.render("resumo", {valor_total, entrada, saida, hospede1, hospede2, hospede3, hospede4}))
+        .catch(err => console.log(err));
         },
 };
 
