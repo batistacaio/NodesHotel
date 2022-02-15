@@ -1,4 +1,6 @@
 const db = require("../database/models");
+const { Op } = require("sequelize");
+
 const precos = [
   {suite :"PLAZA", diaria: 240.00},
   {suite: "ROMA", diaria: 280.00},
@@ -12,9 +14,14 @@ const precos = [
 
 const bookingController = {
 
-  showResumo: function(req,res,next){
-    var x = req.params.id
-    res.render('resumo')
+  showResumo: async function(req,res,next){
+    var codReserva = req.params.id
+    const reserva = await db.Reserva.findOne({
+      where: {
+        id: {[Op.eq]: codReserva}
+      }
+    })
+    res.render('resumo', { hospede1_titular: reserva })
   },
 
   reservar: async function(req, res, next){
