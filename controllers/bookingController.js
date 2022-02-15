@@ -39,7 +39,7 @@ const bookingController = {
  });
 
 var valor_total = null
-var valor_total = (objeto.diaria * diffDays).toLocaleString('pt-br', {style: 'currency', currency: "BRL"});    //>>>>>Multimplicando o valor da diaria escolhida pela quantidade de dias e formatando para moeda nacional //
+var valor_total = (objeto.diaria * diffDays).toLocaleString('pt-br', {style: 'currency', currency: "BRL"});  
 
 
 
