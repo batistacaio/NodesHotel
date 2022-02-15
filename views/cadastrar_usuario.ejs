@@ -1,86 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Nodes Hotel</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheets/cadastrar_usuario.css">
-    <title>Document</title>
-</head>
-
-<body>
+<%- include("partials/header.ejs") %>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-<div class="header">
-
-<a href="/"><h1>Home</h1></a>&nbsp&nbsp&nbsp
-<a href="reservas"><h1>Reservas</h1></a>&nbsp&nbsp&nbsp
-<a href="suites"><h1>Suítes</h1></a>&nbsp&nbsp&nbsp
-<a href="contato"><h1>Contato</h1></a>&nbsp&nbsp&nbsp
-<a href="logar"><h1>Login</h1></a>&nbsp&nbsp&nbsp
-<a href="logout"><h1>Logout</h1></a>&nbsp&nbsp&nbsp
-
-</div>
-    <div class="container">
-        <span class = 'título'>
-        <h1>CADASTRE-SE EM NOSSO SITE</h1>
-    </span>
-       <br><br>
-<div class="foto">
-        <form action="/cadastrar/foto" method = "POST" name='form2' id='form2' enctype="multipart/form-data">
-            <input type="file" name = "foto" id="foto">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type='submit' name = "btn1" id="btn1">upload</button>
+<div class="container py-5">
+    <h1>Preencha o formulário e cadastre-se</h1>
+    <div class="mb-3 d-flex ">
+        <form action="/cadastrar/foto" method="POST" name='form2' id='form2' enctype="multipart/form-data">
+            <label class="form-label" for="formFile">Carregue uma foto para o seu perfil</label>
+            <input class="form-control" type="file" name="foto" id="formFile">
+            <button class="btn my-3" type="submit" name="btn1" id="btn1">Upload</button>
         </form>
-        <label>Carregue uma foto para o seu perfil</label><br><br><br><br>
     </div>
-        <% if(typeof(errors) != "undefined"){ %>
-
-            <div class="warn">
-                 <ul>
-                     <% errors.forEach((errors)=>{ %>
-                     <p><%= errors.msg %> </p>
-                     <% }) %>
-                 </ul>
-           
-             </div>
-        <% } %>
-        
-        <h1>PREENCHA OS DADOS ABAIXO: </h1>
-        <br><br><br>
-        
-            <form action='/cadastrar' method ='POST' id ="form1">
-          
-                
-                <div class="dados">
-
-            <input type="text" name = "nome" id="nome" placeholder=" Nome Completo">&nbsp&nbsp&nbsp<input type="email" name = "email" id="email" placeholder="  e-mail" ><br><br>
-            
-            <input type="text" name = "cpf" id="cpf" placeholder=" CPF">&nbsp&nbsp&nbsp<input type="text" name = "telefone" id="telefone" placeholder=" (XX) XXXX-XXXX"><br><br>
-        
-            <input type="text" name = 'endereco' id = 'endereco' placeholder="Endereço" >&nbsp&nbsp&nbsp<input type="text" name = "cep" id = "cep" placeholder="CEP" ><br><br>
-            <input type="text" name = 'cidade' id = "cidade" placeholder="Cidade" >&nbsp&nbsp&nbsp<input type="text" name = "uf" id = "uf" placeholder="UF" >
+    <% if(typeof(errors) != "undefined"){ %>
+        <div class="warn">
+            <ul>
+                <% errors.forEach((errors)=>{ %>
+                <p><%= errors.msg %> </p>
+                <% }) %>
+            </ul>
         </div>
-      
-        <br><br><br><br>
-
-
+    <% } %>
+    <h2>Dados pessoais: </h2>
+    <form action="/cadastrar" method ="POST" id ="form1" class="form-group w-50">
+        <div class="dados">
+            <input class="form-control my-3" type="text" name="nome" id="nome" placeholder="Nome Completo">
+            <input class="form-control my-3" type="email" name="email" id="email" placeholder="E-mail" >
+            <input class="form-control my-3" type="text" name="cpf" id="cpf" placeholder="CPF">
+            <input class="form-control my-3" type="text" name="telefone" id="telefone" placeholder="(XX) XXXX-XXXX">
+            <input class="form-control my-3" type="text" name="cep" id ="cep" placeholder="CEP" >
+            <input class="form-control my-3" type="text" name="endereco" id="endereco" placeholder="Endereço" >
+            <input class="form-control my-3" type="text" name="cidade" id ="cidade" placeholder="Cidade" >
+            <input class="form-control my-3" type="text" name="uf" id ="uf" placeholder="UF" >
+        </div>
         <div class="senhas">
-   
-            <input type="password" name="senha" id="senha" placeholder="senha de acesso" onchange="habilitar(), desabilitar()"> <br><br>
-            <input type ="password" name = "confirmacao" id="confirmacao" placeholder="confirme a senha" onchange="habilitar(), desabilitar()"><br>
+            <input class="form-control" type="password" name="senha" id="senha" placeholder="senha de acesso" onchange="habilitar(), desabilitar()">
+            <input class="form-control" type="password" name="confirmacao" id="confirmacao" placeholder="confirme a senha" onchange="habilitar(), desabilitar()">
             <div class="msg" id="msg" style="display:none">
-                <h2>SENHAS NÃO CONFEREM!</p>
+                <p class="alert">SENHAS NÃO CONFEREM!</p>
             </div>
         </div>
-
-          
-        </form>
-        <br><br><br>
-        <span class = "botao">
-            <button type="submit" form="form1" id="botao" disabled>CADASTRAR</button><br>
-            </span>
-
+    </form>
+    <span class="botao">
+        <button class="btn btn-success" type="submit" form="form1" id="botao" disabled>CADASTRAR</button><br>
+    </span>
 </div>
 
 <script src="../javascript-front.js"></script>
@@ -97,6 +58,5 @@
     });
 });</script>
 
-</body>
-
-</html>
+</main>
+<%- include("partials/footer.ejs") %>

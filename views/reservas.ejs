@@ -1,108 +1,88 @@
 <%- include("partials/header.ejs") %>
 
-<div class="CONTAINER">
-  
-
-<div class="FORMULARIO">
-    <h3>RESERVAR QUARTO</h3>
-
-<form action="/booking", method="POST" id="booking">
-
-<br><br>
-    <section class="dates">
-        <div><p>Entrada<input type="date" id="entrada" name="entrada" required /></p></div>
-        <div><p>Saída<input type="date" id="saída" name="saida" required /></p></div></section>
-
-    <br><br> 
-
-    <div class="hospedes">
-
-        <label for="">Quantidade de hóspedes</label>
-        <select class='hospedes' name='hospedes' id='hospedes' required>
-        <option value="">----</option>
-        <option value=1>1</option>
-        <option value=2>2</option>
-        <option value=3>3</option>
-        <option value=4>4</option></select>
-   </div>
-
-   <br><br> 
-   
-    <div class="suites">
-        <label for="">Escolha uma suíte &nbsp&nbsp&nbsp</label>
-        <select class='suites' name='suites' id='suites' required>
-        <option value="">----</option>
-        <option value="PLAZA">PLAZA</option>
-        <option value="MASTER">MASTER</option>
-        <option value="ROMA">ROMA</option>
-        <option value="GOLD">GOLD</option>
-        <option value="OMEGA">OMEGA</option>
-        <option value="ROYAL">ROYAL</option>
-        <option value="GARDEN">GARDEN</option>
-        <option value="SILVER">SILVER</option></select>
-   </div>
-
-   <br><br>
-
-  
-<div class="nomes">
-
-<input type="text" name="hospede1" id="hospede1" placeholder="titular da reserva"><br><br>
-<input type="text" name="hospede2" id="hospede2" placeholder="hospede 2"><br><br>
-<input type="text" name="hospede3" id="hospede3" placeholder="hospede 3"><br><br>
-<input type="text" name="hospede4" id="hospede4" placeholder="hospede 4"><br><br>
-
-</div>
-
-<section class="botao">
-  <br>
-<button type="submit" form="booking">RESERVAR QUARTO</button>
-
-</section>
-
-</form>
-</div> <!--FECHA FORMULARIO-->
-
-
-
-
-<div class="quartos">
-<section>
-    <img src="../images/photo_1.jpg">
-    <label for="">SUÍTE PLAZA R$ 240,00/noite</label>
-    <br><br>
-    <img src="../images/photo_2.jpg">
-    <label for="">SUÍTE MASTER R$ 220,00/noite</label>
-
-</section>
-
-<section>
-    <img src="../images/photo_3.jpg">
-    <label for="">SUÍTE ROMA R$ 280,00/noite</label>
-    <br><br>
-    <img src="../images/photo_4.jpg">
-    <label for="">SUÍTE GOLD R$ 340,00/noite</label>
-
-</section>
-
-<section>
-    <img src="../images/photo_5.jpg">
-    <label for="">SUÍTE OMEGA R$ 200,00/noite</label>
-    <br><br>
-    <img src="../images/photo_6.jpg">
-    <label for="">SUÍTE ROYAL R$ 320,00/noite</label>
-
-</section>
-
-<section>
-    <img src="../images/photo_7.jpg">
-    <label for="">SUÍTE GARDEN R$ 180,00/noite</label>
-    <br><br>
-    <img src="../images/photo_8.jpg">
-    <label for="">SUÍTE SILVER R$ 250,00/noite</label>
-
-</section>
-</div> <!--FECHA QUARTOS-->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group w-75">
+                <h3>Reserve o seu quarto</h3>
+                <form action="/booking", method="POST" id="booking">
+                    <label class="form-label">Entrada</label>
+                    <input class="form-control mb-2" type="date" id="entrada" name="entrada" required />
+                    <label class="form-label">Saída</label>
+                    <input class="form-control mb-2" type="date" id="saída" name="saida" required />
+                    <div class="hospedes">
+                        <label class="form-label" for="">Quantidade de hóspedes</label>
+                        <select class="form-control" name="hospedes" id="hospedes" required>
+                            <option value="">----</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                        </select>
+                    </div>
+                    <div class="suites">
+                        <label class="form-label" for="">Escolha uma suíte &nbsp&nbsp&nbsp</label>
+                        <select class="form-control" name="suites" id="suites" required>
+                            <option value="">----</option>
+                            <option value="PLAZA">PLAZA</option>
+                            <option value="MASTER">MASTER</option>
+                            <option value="ROMA">ROMA</option>
+                            <option value="GOLD">GOLD</option>
+                            <option value="OMEGA">OMEGA</option>
+                            <option value="ROYAL">ROYAL</option>
+                            <option value="GARDEN">GARDEN</option>
+                            <option value="SILVER">SILVER</option>
+                        </select>
+                    </div>
+                    <div class="my-5">
+                        <input class="form-control my-2" type="text" name="hospede1" id="hospede1" placeholder="Titular da Reserva">
+                        <input class="form-control my-2" type="text" name="hospede2" id="hospede2" placeholder="Hospede 2">
+                        <input class="form-control my-2" type="text" name="hospede3" id="hospede3" placeholder="Hospede 3">
+                        <input class="form-control my-2" type="text" name="hospede4" id="hospede4" placeholder="Hospede 4">
+                    </div>
+                    <section class="botao">
+                        <button class="btn btn-success" type="submit" form="booking">RESERVAR QUARTO</button>
+                    </section>
+                </form>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="card w-50">
+                    <img src="../images/suite.jpg">
+                    <label for="">SUÍTE PLAZA R$ 240,00/noite</label>
+                </div>
+                <div class="card w-50">
+                    <img src="../images/suite1.jpg">
+                    <label for="">SUÍTE MASTER R$ 220,00/noite</label>
+                </div>
+                <div class="card w-50">
+                    <img src="../images/suite2.jpg">
+                    <label for="">SUÍTE ROMA R$ 280,00/noite</label>
+                </div>
+                <div class="card w-50">
+                    <img src="../images/suite3.jpg">
+                    <label for="">SUÍTE GOLD R$ 340,00/noite</label>
+                </div>
+                <div class="card w-50">
+                    <img src="../images/suite4.jpg">
+                    <label for="">SUÍTE OMEGA R$ 200,00/noite</label>
+                </div>
+                <div class="card w-50">
+                    <img src="../images/suite5.jpg">
+                    <label for="">SUÍTE ROYAL R$ 320,00/noite</label>
+                </div>
+                <div class="card w-50">
+                    <img src="../images/suite6.jpg">
+                    <label for="">SUÍTE GARDEN R$ 180,00/noite</label>
+                </div>
+                <div class="card w-50">
+                    <img src="../images/suite7.jpg">
+                    <label for="">SUÍTE SILVER R$ 250,00/noite</label>
+                </div>
+            </div>
+        </div>
+    </div>
 </div> <!--FECHA CONTAINER-->
 
 
