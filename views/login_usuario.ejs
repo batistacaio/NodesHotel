@@ -1,42 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Nodes Hotel</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='/stylesheets/login_usuario.css' />
-    <title>Document</title>
+<%- include("partials/header-login.ejs") %>
     <style>
-        body {   background-image: url("../images/hotel-macutay.png");background-size: cover;}
-         </style>
-</head>
-<body>
-    <a href="/">
-        <img src="../images/home_1.png" alt="">
-    </a>
+        main {
+            background-image: url("../images/hotel-macutay.png");
+            background-size: cover;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 
+    <div class="bg-light rounded p-4">
+        <h1 class="text-dark">Login</h1>
+        <form action="/logar" method= 'POST'>
+            <input class="form-control my-2" type="email" name= "email" id = "email" placeholder="endereço de e-mail">
+            <input class="form-control my-2" type="password" name ="senha" id="senha" placeholder="senha de acesso" >
+            <button class="btn btn-success my-3" type="submit">Entrar</button>
+        </form>
+        <a href="./cadastrar"><button class="btn btn-ligth">Não tenho cadastro</button></a>
     </div>
-    
-    <span class = container>
-        <h1>LOGIN</h1>
-    <form action="/logar" method= 'POST'>
-
-   <input type="email" name= "email" id = "email" placeholder="endereço de e-mail" ><br><br>
-
-   <input type="password" name = 'senha' id = 'senha' placeholder="senha de acesso" >
-   <br><br><br>
-   <button type="submit">Entrar</button>
-
-    </form>
-<br><br><br>
-    <form name = 'button' id= 'button'>
-        <a href="/cadastrar"> 
-            <!-- esse botao acima é apenas um botao com link para acessar a pasta de cadastro. -->
-            <input type="button" value = 'Não tenho cadastro!'>
-        </a>
-     
-    </form>
-</span>
-</body>
-</html>
+<%- include("partials/footer.ejs") %>
